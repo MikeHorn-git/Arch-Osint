@@ -1,33 +1,33 @@
 # Arch Osint VM
-                          ........  ....
-                       .:::....
-                    :--:..        ..
-                 .:--.         ....            ..
-                -=:.   . . ...::... .    .   ..
-              :---::. .    .::.......     ..::::. .   .
-             ==:--:.....  ..-:...........:......-
-            *+:--:...  ....:-----:::........    .
-           **::--:...    :::..::--.. ..........  ..
-          +*=.--::.      .-:::.     .. ...       ..
-         :#==-::.       . .::.         :.       ..
-         ++=+==:          .::       . .   ..      ..
-        .*--+==:       .            ....         ..
-        :#-:==:           .... .   .......      .
-        -*-:=.   .:         ..... ....   .   .  .
-        :+:==      ...          .  .              .
-        .+::.                              . ..
-         +-:::                  ..
-         :*:-- ..                  ...
-          =+:  .:                     ..
-           ++: .:
-            +*:.....                           . .
-             =+: ......                       .....
-              :-::    ....                      . .
-                :--.
-                  :-:.
-                    .::::..
-                       .::::.
-                           ..................
+                                                              ........  ....
+                                                           .:::....
+                                                        :--:..        ..
+                                                     .:--.         ....            ..
+                                                    -=:.   . . ...::... .    .   ..
+                                                  :---::. .    .::.......     ..::::. .   .
+                                                  ==:--:.....  ..-:...........:......-
+                                                *+:--:...  ....:-----:::........    .
+                                               **::--:...    :::..::--.. ..........  ..
+                                              +*=.--::.      .-:::.     .. ...       ..
+                                             :#==-::.       . .::.         :.       ..
+                                             ++=+==:          .::       . .   ..      ..
+                                            .*--+==:       .            ....         ..
+                                            :#-:==:           .... .   .......      .
+                                            -*-:=.   .:         ..... ....   .   .  .
+                                            :+:==      ...          .  .              .
+                                            .+::.                              . ..
+                                             +-:::                  ..
+                                             :*:-- ..                  ...
+                                              =+:  .:                     ..
+                                               ++: .:
+                                                +*:.....                           . .
+                                                 =+: ......                       .....
+                                                  :-::    ....                      . .
+                                                    :--.
+                                                      :-:.
+                                                        .::::..
+                                                           .::::.
+                                                               ..................
 
 
 # Informations
@@ -35,6 +35,19 @@
 * Size : 
 * Time : Long
 
+# Usage
+```bash
+An arch osint VM with +100 tools, resources and features.
+
+Syntax: arch-osint -[h|v|a|t|r|m]
+options:
+-h     Print this Help.
+-v     Print software version.
+-a     Install all scripts.
+-t     Install tools.
+-r     Install resources.
+-m     Install miscellaneous features.
+```
 
 # Installation
 ```bash
@@ -47,7 +60,6 @@ sudo ./arch-osint.sh -$OPTION | tee log.txt
 ```
 
 # Tools
-OSINT
 * [Amass](https://github.com/owasp-amass/amass)                         In-depth attack surface mapping and asset discovery 
 * [Bdfr](https://github.com/AlisamTechnology/ATSCAN)                    Advanced dork Search & Mass Exploit Scanner 
 * [Blackbird](https://github.com/p1ngul1n0/blackbird)                   An OSINT tool to search for accounts by username in social networks.
@@ -90,8 +102,8 @@ OSINT
 * [Linkedin2username](https://github.com/initstring/linkedin2username)  OSINT Tool: Generate username lists for companies on LinkedIn
 * [Macchanger](https://github.com/alobbs/macchanger)                    GNU MAC Changer
 * [Mat2](https://github.com/jvoisin/mat2)                               Mat2 is a metadata removal tool, supporting a wide range of commonly used file formats, written in python3
-* [Maigret](https://github.com/soxoj/maigret)                           Collect a dossier on a person by username from thousands of sites 
-* [Mailcat](https://github.com/sharsil/mailcat)                         Find existing email addresses by nickname using API/SMTP checking methods without user notification. 
+* [Mailcat](https://github.com/sharsil/mailcat)                         Find existing email addresses by nickname using API/SMTP checking methods without user notification.
+* [Maigret](https://github.com/soxoj/maigret)                           Collect a dossier on a person by username from thousands of sites  
 * [Maltego](https://www.maltego.com/)                                   Comprehensive tool for graphical link analyses that offers real-time data mining and information gathering
 * [Metagoofil](https://github.com/laramies/metagoofil)                  Metadata harvester 
 * [Moriarty-Project](https://github.com/AzizKpln/Moriarty-Project)      This tool gives information about the phone number that you entered.
@@ -151,4 +163,9 @@ OSINT
 
 
 # Resources
-# Features
+
+# Miscellaneous Features
+* Firefox hardened with [user.js](https://github.com/arkenfox/user.js)
+* Joplin note taking and to-do app with [osint notebook](https://github.com/tjnull/TJ-OSINT-Notebook)
+* Vim with [custum vimrc](https://github.com/amix/vimrc)
+* Zsh with [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh)
