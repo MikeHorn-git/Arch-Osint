@@ -1,4 +1,4 @@
-# Arch Osint VM
+#  🌍 Arch Osint VM
                                                               ........  ....
                                                            .:::....
                                                         :--:..        ..
@@ -30,12 +30,10 @@
                                                                ..................
 
 
-# Informations
-* Requirement : Arch linux with GUI
-* Size : 
-* Time : Long
+# 🔍 Description
+arch-osint is flexible bash script to transform a clean archlinux with systemd to an Osint VM. Aiming at contribute to the osint community the projetc is usefull from begginer to professionnal. Contain more than hundred tools for Osint [SOCMINT, GEOINT, IMINT and more], and other for helping in investigations [Utilities, Forensics, Steganography, Network and more]. For better experience the script provide resources [Bookmarks, Startme pages, Awesome lists, Guides and more] focused on Osint, and miscalleneaous features for improve Osint activties with privacy tools, productive tools and custom experience.
 
-# Usage
+# 🪶 Usage
 ```bash
 An arch osint VM with +100 tools, resources and features.
 
@@ -49,7 +47,7 @@ options:
 -m     Install miscellaneous features.
 ```
 
-# Installation
+#  👷 Installation
 ```bash
 git clone htps://github.com/MikeHorn-git/arch-osint.git
 cd arch-osint
@@ -59,12 +57,11 @@ sudo ./arch-osint.sh -$OPTION
 sudo ./arch-osint.sh -$OPTION | tee log.txt
 ```
 
-# Tools
+# 🛠️ +100 Tools
 * [Amass](https://github.com/owasp-amass/amass)                         In-depth attack surface mapping and asset discovery 
 * [Bdfr](https://github.com/AlisamTechnology/ATSCAN)                    Advanced dork Search & Mass Exploit Scanner 
 * [Blackbird](https://github.com/p1ngul1n0/blackbird)                   An OSINT tool to search for accounts by username in social networks.
-* [Binwalk](https://github.com/ReFirmLabs/binwalk)                      Firmware Analysis Tool 
-* [Bleachbit](https://github.com/bleachbit/bleachbit)                   BleachBit system cleaner for Windows and Linux 
+* [Binwalk](https://github.com/ReFirmLabs/binwalk)                      Firmware Analysis Tool  
 * [Carbon14](https://github.com/Lazza/Carbon14)                         OSINT dating tool for web pages 
 * [Cardpwn](https://github.com/itsmehacker/CardPwn)                     OSINT Tool to find Breached Credit Cards Informatio
 * [Chatgpt-shell-cli](https://github.com/0xacx/chatGPT-shell-cli)       Simple shell script to use OpenAI's ChatGPT and DALL-E from the terminal. No Python or JS required.
@@ -100,8 +97,6 @@ sudo ./arch-osint.sh -$OPTION | tee log.txt
 * [Instaloader](https://github.com/instaloader/instaloader)             Download pictures (or videos) along with their captions and other metadata from Instagram. 
 * [Kamerka](https://github.com/woj-ciech/kamerka)                       Build interactive map of cameras from Shodan
 * [Linkedin2username](https://github.com/initstring/linkedin2username)  OSINT Tool: Generate username lists for companies on LinkedIn
-* [Macchanger](https://github.com/alobbs/macchanger)                    GNU MAC Changer
-* [Mat2](https://github.com/jvoisin/mat2)                               Mat2 is a metadata removal tool, supporting a wide range of commonly used file formats, written in python3
 * [Mailcat](https://github.com/sharsil/mailcat)                         Find existing email addresses by nickname using API/SMTP checking methods without user notification.
 * [Maigret](https://github.com/soxoj/maigret)                           Collect a dossier on a person by username from thousands of sites  
 * [Maltego](https://www.maltego.com/)                                   Comprehensive tool for graphical link analyses that offers real-time data mining and information gathering
@@ -119,7 +114,6 @@ sudo ./arch-osint.sh -$OPTION | tee log.txt
 * [Photon](https://github.com/s0md3v/Photon)                            Incredibly fast crawler designed for OSINT. 
 * [PD](https://github.com/limkokhole/pinterest-downloader)              Download all images/videos from Pinterest user/board/section.
 * [Protosint](https://github.com/pixelbubble/ProtOSINT)                 ProtOSINT is a Python script that helps you investigate Protonmail accounts and ProtonVPN IP addresses
-* [Proxychains-ng](https://github.com/rofl0r/proxychains-ng)            Proxychains ng (new generation) - a preloader which redirects it through one or more socks/http proxies.
 * [Pwndb](https://github.com/davidtavarez/pwndb)                        Search for leaked credentials
 * [PwnedOrNot](https://github.com/thewhiteh4t/pwnedOrNot)               OSINT Tool for Finding Passwords of Compromised Email Addresses
 * [Qgis](https://github.com/qgis/QGIS)                                  QGIS is a free, open source, cross platform (lin/win/mac) geographical information system (GIS) 
@@ -147,7 +141,6 @@ sudo ./arch-osint.sh -$OPTION | tee log.txt
 * [Tinfoleak](https://github.com/vaguileradiaz/tinfoleak)               The most complete open-source tool for Twitter intelligence analysis
 * [TorBrowser](https://github.com/micahflee/torbrowser-launcher)        Securely and easily download, verify, install, and launch Tor Browser in Linux
 * [Torcrawl](https://github.com/MikeMeliz/TorCrawl.py)                  Crawl and extract (regular or onion) webpages through TOR network
-* [Torctl](https://github.com/BlackArch/torctl)                         Script to redirect all traffic through tor network including dns queries for anonymizing entire system
 * [Translate-shell](https://github.com/soimort/translate-shell)         Command-line translator using Google Translate, Bing Translator, Yandex.Translate, etc.
 * [Trape](https://github.com/jofpin/trape)                              People tracker on the Internet: OSINT analysis and research tool by Jose Pino
 * [Twint](https://github.com/twintproject/twint)                        An advanced Twitter scraping & OSINT tool written in Python that doesn't use Twitter's API.
@@ -162,10 +155,23 @@ sudo ./arch-osint.sh -$OPTION | tee log.txt
 * [Zen](https://github.com/s0md3v/Zen)                                  Find emails of Github users 
 
 
-# Resources
+# 📚 Resources
 
 # Miscellaneous Features
-* Firefox hardened with [user.js](https://github.com/arkenfox/user.js)
-* Joplin note taking and to-do app with [osint notebook](https://github.com/tjnull/TJ-OSINT-Notebook)
+* Custom [background](https://github.com/MikeHorn-git/arch-osint/blob/main/background.jpg)
+* [Firefox](https://www.mozilla.org/en-US/firefox/new/) hardened with [user.js](https://github.com/arkenfox/user.js)
+* [Joplin](https://github.com/laurent22/joplin) note taking and to-do app with [osint notebook](https://github.com/tjnull/TJ-OSINT-Notebook)
+* [Macchanger](https://github.com/alobbs/macchanger) with [systemd unit](https://wiki.archlinux.org/title/MAC_address_spoofing#macchanger_2)
+* Privacy tools featuring [Bleachbit](https://github.com/bleachbit/bleachbit), [Mat2](https://github.com/jvoisin/mat2), [Proxychains-ng]([Proxychains-ng](https://github.com/rofl0r/proxychains-ng)), [Torctl](https://github.com/BlackArch/torctl).
 * Vim with [custum vimrc](https://github.com/amix/vimrc)
-* Zsh with [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh)
+* Zsh with [ohmyzsh framework](https://github.com/ohmyzsh/ohmyzsh)
+
+#  ✉️ Credits
+* All author and contributor for the tools, resources and more mentioned in this project.
+* The unknown background author.
+* [Blackarch](https://www.blackarch.org/) for their repositorie
+  
+#  📡 TO-DO
+- [ ] Add more resources and features
+- [ ] Make kali linux portage
+- [ ] Create a distribution with an iso and ova files
