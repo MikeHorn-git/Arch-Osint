@@ -33,7 +33,7 @@
 arch-osint is flexible bash script to transform a clean archlinux with systemd to an Osint VM. Aiming at contribute to the osint community the projetc is usefull from begginer to professionnal. Contain more than hundred tools for Osint [SOCMINT, GEOINT, IMINT and more], and other for helping in investigations [Utilities, Forensics, Steganography, Network and more]. For better experience the script provide resources [Bookmarks, Startme pages, Awesome lists, Guides and more] focused on Osint, and miscalleneaous features for improve Osint activties with privacy tools, productive tools and custom experience.
 
 
-#  👷 Installation
+# 👷 Installation
 ```bash
 git clone htps://github.com/MikeHorn-git/arch-osint.git
 cd arch-osint
@@ -169,7 +169,7 @@ options:
 * [Firefox](https://www.mozilla.org/en-US/firefox/new/) hardened with [user.js](https://github.com/arkenfox/user.js)
 * [Joplin](https://github.com/laurent22/joplin) note taking and to-do app with [osint notebook](https://github.com/tjnull/TJ-OSINT-Notebook)
 * [Macchanger](https://github.com/alobbs/macchanger) with [systemd unit](https://wiki.archlinux.org/title/MAC_address_spoofing#macchanger_2)
-* Privacy tools featuring [Bleachbit](https://github.com/bleachbit/bleachbit), [Mat2](https://github.com/jvoisin/mat2), [Proxychains-ng]([Proxychains-ng](https://github.com/rofl0r/proxychains-ng)), [Torctl](https://github.com/BlackArch/torctl).
+* Privacy tools featuring [Bleachbit](https://github.com/bleachbit/bleachbit), [Mat2](https://github.com/jvoisin/mat2), [Proxychains-ng](https://github.com/rofl0r/proxychains-ng), [Torctl](https://github.com/BlackArch/torctl).
 * Vim with [custum vimrc](https://github.com/amix/vimrc)
 * Zsh with [ohmyzsh framework](https://github.com/ohmyzsh/ohmyzsh)
 
