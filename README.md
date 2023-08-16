@@ -34,7 +34,7 @@ Run this script in a clean, dedicated and new operating system. Certain configur
 The hardened feature in miscellaneaous block some functionnalities like bluetooth, network file systems, webcams and more.
 
 # 🔍 Description
-arch-osint is a flexible bash script to transform a clean archlinux with systemd to an Osint VM. Aiming at contribute to the osint community the projetc is usefull from begginer to professionnal. Contain more than hundred tools for Osint [SOCMINT, GEOINT, IMINT and more], and other tools for helping in investigations [Utilities, Forensics, Steganography, Network and more]. For better experience the script provide resources [Bookmarks, Startme pages, Awesome lists, Guides and more] focused on Osint, and miscalleneaous features for improve Osint activties with hardened tricks, privacy tools and custom experience.
+arch-osint is a flexible bash script to transform a clean archlinux with systemd to an Osint VM. Aiming at contribute to the osint community the projetc is usefull from begginer to professionnal. Contain more than hundred tools for Osint [SOCMINT, GEOINT, IMINT and more], and other tools for helping in investigations [Utilities, Forensics, Steganography, Network and more]. For better experience the script provide resources [Bookmarks, Startme pages, Awesome lists, Guides and more] focused on Osint, and miscalleneaous features for improve Osint activties with hardened tricks, privacy tools and custom experience. The project is currently in beta
 
 
 # 👷 Installation
@@ -160,25 +160,25 @@ options:
 
 
 # 📚 Resources
-* [DeepdarkCTI](https://github.com/fastfire/deepdarkCTI) resources
-* [Offshoreleaks data](https://github.com/ICIJ/offshoreleaks-data-packages) dump for [neo4j](https://github.com/neo4j/neo4j)
-* [Osint awesome lists](https://github.com/sindresorhus/awesome) resources
-* [Osint bookmarks](https://github.com/OhShINT/ohshint.gitbook.io/blob/main/Lists_of_OSINT_Web_Resources/Bookmarks/1_Complete_Bookmarks_Organized_18-4-2023_ohshint.html) from [OhShINTt](https://github.com/OhShINT)
-* Osint guides resources
-* [Osint startme pages](https://about.start.me/) resources
-* Sanction and Most wanted [lists](https://github.com/bigger312/Sanctions-Lists/) 
+* [DeepdarkCTI](https://github.com/fastfire/deepdarkCTI) resources.
+* [Offshoreleaks data](https://github.com/ICIJ/offshoreleaks-data-packages) dump for [neo4j](https://github.com/neo4j/neo4j).
+* [Osint awesome lists](https://github.com/sindresorhus/awesome) resources.
+* [Osint bookmarks](https://github.com/OhShINT/ohshint.gitbook.io/blob/main/Lists_of_OSINT_Web_Resources/Bookmarks/1_Complete_Bookmarks_Organized_18-4-2023_ohshint.html) from [OhShINTt].(https://github.com/OhShINT)
+* Osint guides resources.
+* [Osint startme pages](https://about.start.me/) resources.
+* Sanction and Most wanted [lists](https://github.com/bigger312/Sanctions-Lists/).
 
 # 🌟 Miscellaneous Features
-* Custom [background](https://github.com/MikeHorn-git/arch-osint/blob/main/background.jpg)
-* Disk encryption with [Veracrypt](https://veracrypt.fr/en/Home.html)
-* Firewall with the [Uncomplicated Firewall](https://launchpad.net/ufw)
-* Hardened [Firefox](https://www.mozilla.org/en-US/firefox/new/) with [user.js](https://github.com/arkenfox/user.js)
+* Custom [background](https://github.com/MikeHorn-git/arch-osint/blob/main/background.jpg).
+* Disk encryption with [Veracrypt](https://veracrypt.fr/en/Home.html).
+* Firewall with the [Uncomplicated Firewall](https://launchpad.net/ufw).
+* Hardened [Firefox](https://www.mozilla.org/en-US/firefox/new/) with [user.js](https://github.com/arkenfox/user.js).
 * Hardened system featuring [Kernel Hardened](https://archlinux.org/packages/extra/x86_64/linux-hardened/), [Blacklist unwanted Kernel Module](https://wiki.archlinux.org/title/Kernel_module#Blacklisting) [Anti Core dump, File restriction](https://madaidans-insecurities.github.io/guides/linux-hardening.html) [Entropy](https://github.com/jirka-h/haveged) and many more.  
-* Note taking and to-do [Joplin](https://github.com/laurent22/joplin) app with [osint notebook](https://github.com/tjnull/TJ-OSINT-Notebook)
-* Manipulation of MAC address by [Macchanger](https://github.com/alobbs/macchanger) with [systemd unit](https://wiki.archlinux.org/title/MAC_address_spoofing#macchanger_2)
+* Note taking and to-do [Joplin](https://github.com/laurent22/joplin) app with [osint notebook](https://github.com/tjnull/TJ-OSINT-Notebook).
+* Manipulation of MAC address by [Macchanger](https://github.com/alobbs/macchanger) with [systemd unit](https://wiki.archlinux.org/title/MAC_address_spoofing#macchanger_2).
 * Privacy tools featuring [Bleachbit](https://github.com/bleachbit/bleachbit), [Mat2](https://github.com/jvoisin/mat2), [Proxychains-ng](https://github.com/rofl0r/proxychains-ng), [Torctl](https://github.com/BlackArch/torctl).
-* Vim with [custum vimrc](https://github.com/amix/vimrc)
-* Zsh with [ohmyzsh framework](https://github.com/ohmyzsh/ohmyzsh)
+* Vim with [custum vimrc](https://github.com/amix/vimrc).
+* Zsh with [ohmyzsh framework](https://github.com/ohmyzsh/ohmyzsh).
 
 
 # ✉️ Credits
@@ -191,7 +191,6 @@ options:
 * Feel free to contribute by giving ideas, open/fix issues, ...
 * 💫 the project if you like it, it's the best way to support.
 
-# 🛞 Version Beta
 
 # 📡 To-Do
 - [ ] Add more resources and features
