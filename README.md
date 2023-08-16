@@ -178,7 +178,7 @@ options:
 * Disk encryption with [Veracrypt](https://veracrypt.fr/en/Home.html).
 * Firewall with the [Uncomplicated Firewall](https://launchpad.net/ufw).
 * Hardened [Firefox](https://www.mozilla.org/en-US/firefox/new/) with [user.js](https://github.com/arkenfox/user.js).
-* Hardened system featuring [Kernel Hardened](https://archlinux.org/packages/extra/x86_64/linux-hardened/), [Blacklist unwanted Kernel Module](https://wiki.archlinux.org/title/Kernel_module#Blacklisting) [Anti Core dump, File restriction](https://madaidans-insecurities.github.io/guides/linux-hardening.html) [Entropy](https://github.com/jirka-h/haveged) and many more.  
+* Hardened system featuring [Kernel hardened](https://archlinux.org/packages/extra/x86_64/linux-hardened/), [blacklist](https://wiki.archlinux.org/title/Kernel_module#Blacklisting) unwanted Kernel module, [anti core dump, file restriction](https://madaidans-insecurities.github.io/guides/linux-hardening.html), [entropy](https://github.com/jirka-h/haveged) and many more.  
 * Note taking and to-do [Joplin](https://github.com/laurent22/joplin) app with [osint notebook](https://github.com/tjnull/TJ-OSINT-Notebook).
 * Manipulation of MAC address by [Macchanger](https://github.com/alobbs/macchanger) with [systemd unit](https://wiki.archlinux.org/title/MAC_address_spoofing#macchanger_2).
 * Privacy tools featuring [Bleachbit](https://github.com/bleachbit/bleachbit), [Mat2](https://github.com/jvoisin/mat2), [Proxychains-ng](https://github.com/rofl0r/proxychains-ng), [Torctl](https://github.com/BlackArch/torctl).
