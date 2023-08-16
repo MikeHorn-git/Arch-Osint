@@ -33,6 +33,17 @@
 Run this script in a clean, dedicated and new operating system. Certain configurations and preferences can be disable or overwrite.
 The hardened feature in miscellaneaous block some functionnalities like bluetooth, network file systems, webcams and more.
 
+# 📋 Table of content
+* [Description](https://github.com/MikeHorn-git/arch-osint#-description)
+* [Installation](https://github.com/MikeHorn-git/arch-osint#-installation)
+* [Usage](https://github.com/MikeHorn-git/arch-osint#-usage)
+* [Tools](https://github.com/MikeHorn-git/arch-osint#%EF%B8%8F-100-tools)
+* [Resources](https://github.com/MikeHorn-git/arch-osint#-resources)
+* [Features](https://github.com/MikeHorn-git/arch-osint#-miscellaneous-features)
+* [Credits](https://github.com/MikeHorn-git/arch-osint#%EF%B8%8F-credits)
+* [Contribute & Support](https://github.com/MikeHorn-git/arch-osint#%EF%B8%8F-contribute--support)
+* [To-do](https://github.com/MikeHorn-git/arch-osint#-to-do)
+
 # 🔍 Description
 arch-osint is a flexible bash script to transform a clean archlinux with systemd to an Osint VM. Aiming at contribute to the osint community the projetc is usefull from begginer to professionnal. Contain more than hundred tools for Osint [SOCMINT, GEOINT, IMINT and more], and other tools for helping in investigations [Utilities, Forensics, Steganography, Network and more]. For better experience the script provide resources [Bookmarks, Startme pages, Awesome lists, Guides and more] focused on Osint, and miscalleneaous features for improve Osint activties with hardened tricks, privacy tools and custom experience. The project is currently in beta
 
@@ -178,7 +189,7 @@ options:
 * Disk encryption with [Veracrypt](https://veracrypt.fr/en/Home.html).
 * Firewall with the [Uncomplicated Firewall](https://launchpad.net/ufw).
 * Hardened [Firefox](https://www.mozilla.org/en-US/firefox/new/) with [user.js](https://github.com/arkenfox/user.js).
-* Hardened system featuring [Kernel hardened](https://archlinux.org/packages/extra/x86_64/linux-hardened/), [blacklist](https://wiki.archlinux.org/title/Kernel_module#Blacklisting) unwanted Kernel module, [anti core dump, file restriction](https://madaidans-insecurities.github.io/guides/linux-hardening.html), [entropy](https://github.com/jirka-h/haveged) and many more.  
+* Hardened system featuring [Kernel hardened](https://archlinux.org/packages/extra/x86_64/linux-hardened/), [blacklist](https://wiki.archlinux.org/title/Kernel_module#Blacklisting) unwanted Kernel module, anti [core dump, file restriction](https://madaidans-insecurities.github.io/guides/linux-hardening.html), [entropy](https://github.com/jirka-h/haveged) and many more.  
 * Note taking and to-do [Joplin](https://github.com/laurent22/joplin) app with [osint notebook](https://github.com/tjnull/TJ-OSINT-Notebook).
 * Manipulation of MAC address by [Macchanger](https://github.com/alobbs/macchanger) with [systemd unit](https://wiki.archlinux.org/title/MAC_address_spoofing#macchanger_2).
 * Privacy tools featuring [Bleachbit](https://github.com/bleachbit/bleachbit), [Mat2](https://github.com/jvoisin/mat2), [Proxychains-ng](https://github.com/rofl0r/proxychains-ng), [Torctl](https://github.com/BlackArch/torctl).
