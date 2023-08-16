@@ -1,4 +1,4 @@
-#  🌍 🕵️ Arch Osint VM
+#  🌍 🕵️ Arch-Osint VM
                                                               ........  ....
                                                            .:::....
                                                         :--:..        ..
@@ -29,18 +29,22 @@
                                                            .::::.
                                                                ..................
 
+# ⚠️ Warning
+Run this script in a clean, dedicated and new operating system. Certain configurations and preferences can be disable or overwrite.
+The hardened feature in miscellaneaous block some functionnalities like bluetooth, network file systems, webcams and more.
+
 # 🔍 Description
-arch-osint is flexible bash script to transform a clean archlinux with systemd to an Osint VM. Aiming at contribute to the osint community the projetc is usefull from begginer to professionnal. Contain more than hundred tools for Osint [SOCMINT, GEOINT, IMINT and more], and other for helping in investigations [Utilities, Forensics, Steganography, Network and more]. For better experience the script provide resources [Bookmarks, Startme pages, Awesome lists, Guides and more] focused on Osint, and miscalleneaous features for improve Osint activties with privacy tools, productive tools and custom experience.
+arch-osint is a flexible bash script to transform a clean archlinux with systemd to an Osint VM. Aiming at contribute to the osint community the projetc is usefull from begginer to professionnal. Contain more than hundred tools for Osint [SOCMINT, GEOINT, IMINT and more], and other tools for helping in investigations [Utilities, Forensics, Steganography, Network and more]. For better experience the script provide resources [Bookmarks, Startme pages, Awesome lists, Guides and more] focused on Osint, and miscalleneaous features for improve Osint activties with hardened tricks, privacy tools and custom experience.
 
 
 # 👷 Installation
 ```bash
 git clone htps://github.com/MikeHorn-git/arch-osint.git
 cd arch-osint
-sudo chmod +x arch-osint.sh
-sudo ./arch-osint.sh -$OPTION
-# Run with log
-sudo ./arch-osint.sh -$OPTION | tee log.txt
+sudo chmod +x arch-osint
+sudo ./arch-osint -$OPTION
+# Run with logs
+sudo ./arch-osint -$OPTION | tee logs.txt
 ```
 
 # 🪶 Usage
@@ -166,21 +170,30 @@ options:
 
 # 🌟 Miscellaneous Features
 * Custom [background](https://github.com/MikeHorn-git/arch-osint/blob/main/background.jpg)
-* [Firefox](https://www.mozilla.org/en-US/firefox/new/) hardened with [user.js](https://github.com/arkenfox/user.js)
-* [Joplin](https://github.com/laurent22/joplin) note taking and to-do app with [osint notebook](https://github.com/tjnull/TJ-OSINT-Notebook)
-* [Macchanger](https://github.com/alobbs/macchanger) with [systemd unit](https://wiki.archlinux.org/title/MAC_address_spoofing#macchanger_2)
+* Disk encryption with [Veracrypt](https://veracrypt.fr/en/Home.html)
+* Firewall with the [Uncomplicated Firewall](https://launchpad.net/ufw)
+* Hardened [Firefox](https://www.mozilla.org/en-US/firefox/new/) with [user.js](https://github.com/arkenfox/user.js)
+* Hardened system featuring [Kernel Hardened](https://archlinux.org/packages/extra/x86_64/linux-hardened/), [Blacklist unwanted Kernel Module](https://wiki.archlinux.org/title/Kernel_module#Blacklisting) [Anti Core dump, File restriction](https://madaidans-insecurities.github.io/guides/linux-hardening.html) [Entropy](https://github.com/jirka-h/haveged) and many more.  
+* Note taking and to-do [Joplin](https://github.com/laurent22/joplin) app with [osint notebook](https://github.com/tjnull/TJ-OSINT-Notebook)
+* Manipulation of MAC address by [Macchanger](https://github.com/alobbs/macchanger) with [systemd unit](https://wiki.archlinux.org/title/MAC_address_spoofing#macchanger_2)
 * Privacy tools featuring [Bleachbit](https://github.com/bleachbit/bleachbit), [Mat2](https://github.com/jvoisin/mat2), [Proxychains-ng](https://github.com/rofl0r/proxychains-ng), [Torctl](https://github.com/BlackArch/torctl).
 * Vim with [custum vimrc](https://github.com/amix/vimrc)
 * Zsh with [ohmyzsh framework](https://github.com/ohmyzsh/ohmyzsh)
 
 
-#  ✉️ Credits
-* All author and contributor for the tools, resources and more mentioned in this project.
+# ✉️ Credits
+* All author and contributor for the projects, resources, tools and more mentioned in this project.
 * The unknown background author.
-* [Blackarch](https://www.blackarch.org/) for their repositorie
+* [Blackarch](https://www.blackarch.org/) for their repositorie.
 
 
-#  📡 TO-DO
+# 🗣️ Contribute & Support
+* Feel free to contribute by giving ideas, open/fix issues, ...
+* 💫 the project if you like it, it's the best way to support.
+
+# 🛞 Version Beta
+
+# 📡 To-Do
 - [ ] Add more resources and features
 - [ ] Create a distribution with an iso and ova files
 - [ ] Make a kali linux portage
