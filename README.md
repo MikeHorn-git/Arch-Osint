@@ -40,6 +40,7 @@ The hardened feature in miscellaneaous block some functionnalities like bluetoot
 * [Tools](https://github.com/MikeHorn-git/arch-osint#%EF%B8%8F-100-tools)
 * [Resources](https://github.com/MikeHorn-git/arch-osint#-resources)
 * [Features](https://github.com/MikeHorn-git/arch-osint#-miscellaneous-features)
+* [Watchlist](https://github.com/MikeHorn-git/arch-osint#-watchlist)
 * [Credits](https://github.com/MikeHorn-git/arch-osint#%EF%B8%8F-credits)
 * [Contribute & Support](https://github.com/MikeHorn-git/arch-osint#%EF%B8%8F-contribute--support)
 * [To-do](https://github.com/MikeHorn-git/arch-osint#-to-do)
@@ -85,7 +86,7 @@ options:
 * [Crosslinked](https://github.com/m8sec/CrossLinked)                   - LinkedIn enumeration tool to extract valid employee names from an organization through search engine scraping. 
 * [Drawio](https://github.com/jgraph/drawio)                            - Draw.io is a JavaScript, client-side editor for general diagramming and whiteboarding.
 * [DumpsterDiver](https://github.com/securing/DumpsterDiver)            - Tool to search secrets in various filetypes.
-* [EagleEye](https://github.com/ThoughtfulDev/EagleEye)                 - Stalk your Friends. Find their Instagram, FB and Twitter Profiles using Image Recognition and Reverse Image Search.
+* [EagleEye]()                 - Stalk your Friends. Find their Instagram, FB and Twitter Profiles using Image Recognition and Reverse Image Search.
 * [Elasticsearch](https://github.com/elastic/elasticsearch)             - Free and Open, Distributed, RESTful Search Engine.
 * [Email2phonenumber](https://github.com/martinvigo/email2phonenumber)  - A OSINT tool to obtain a target's phone number just by having his email address.
 * [Exiflooter](https://github.com/aydinnyunus/exifLooter)               - ExifLooter finds geolocation on all image urls and directories also integrates with OpenStreetMap.
@@ -94,6 +95,7 @@ options:
 * [FacebookOsint](https://github.com/tomoneill19/FacebookOSINT)         - FBOSINT - A tool to replace facebook graph search Resources.
 * [Fake-sms](https://github.com/Narasimha1997/fake-sms)                 - A tool to skip phone number based SMS verification by using a temporary phone number that acts like a proxy. 
 * [Fbi](https://github.com/xHak9x/fbi)                                  - Facebook Information.
+* [Ffmpeg](https://archlinux.org/packages/extra/x86_64/ffmpeg/)         - Complete solution to record, convert and stream audio and video.
 * [Fierce](https://github.com/mschwager/fierce)                         - A DNS reconnaissance tool for locating non-contiguous IP space. 
 * [FinalRecon](https://github.com/thewhiteh4t/FinalRecon)               - The Last Web Recon Tool You'll Need.
 * [Foremost](https://github.com/korczis/foremost)                       - Foremost is a console program to recover files based on their headers, footers, and internal data structures.
@@ -101,6 +103,7 @@ options:
 * [Ghunt](https://github.com/mxrch/GHunt)                               - Offensive Google framework.
 * [Gitfive](https://github.com/mxrch/GitFive)                           - Track down GitHub users.
 * [Githound](https://github.com/tillson/git-hound)                      - Reconnaissance tool for GitHub code search.
+* [Gitleaks](https://github.com/gitleaks/gitleaks)                      - Protect and discover secrets using Gitleaks.
 * [Gobuster](https://github.com/OJ/gobuster)                            - Directory/File, DNS and VHost busting tool written in Go.
 * [Google Earth Pro](https://www.google.com/earth/about/)               - The world's most detailed globe.
 * [Gophish](https://github.com/gophish/gophish)                         - Open-Source Phishing Toolkit.
@@ -125,8 +128,6 @@ options:
 * [Onionsearch](https://github.com/megadose/OnionSearch)                - OnionSearch is a script that scrapes urls on different .onion search engines.
 * [Osintgram](https://github.com/Datalux/Osintgram)                     - Osintgram is a OSINT tool on Instagram.
 * [Osintmap](https://map.malfrats.industries/)                          - A map of OSINT tools.
-* [Osrframework](https://github.com/i3visio/osrframework)               - OSRFramework, is focused on providing API and tools to perform more accurate online researches.
-* [Pepe](https://github.com/woj-ciech/pepe)                             - Collect information about email addresses from Pastebin.
 * [Phoneinfoga](https://github.com/sundowndev/phoneinfoga)              - Information gathering framework for phone numbers.
 * [Phonia](https:/$/github.com/coredamage/phonia)                        - Phonia Toolkit is one of the most advanced toolkits to scan phone numbers using only free resources.
 * [Photon](https://github.com/s0md3v/Photon)                            - Incredibly fast crawler designed for OSINT. 
@@ -148,10 +149,9 @@ options:
 * [Snoop](https://github.com/snooppr/snoop)                             - Snoop Project One of the most promising OSINT tools to search for nicknames.
 * [Snooper](https://github.com/NicholasDollick/Snooper)                 - OSINT Reddit user activity analyzer.
 * [Social-analyzer](https://github.com/qeeqbox/social-analyzer)         - API, CLI, and Web App for analyzing and finding a person's profile in 1000 social media \ websites.
-* [SocialPwned](https://github.com/MrTuxx/SocialPwned)                  - SocialPwned is an OSINT tool that allows to get the emails, from a target, in Instagram, Linkedin and Twitter.
 * [Spiderfoot](https://github.com/smicallef/spiderfoot)                 - SpiderFoot automates OSINT for threat intelligence and mapping your attack surface.
+* [SonicVisualiser](https://www.sonicvisualiser.org/download.html)      - Sonic Visualiser is a program for viewing and exploring audio data for semantic music analysis and annotation.
 * [Sqlitebrowser](https://github.com/sqlitebrowser/sqlitebrowser)       - Official home of the DB Browser for SQLite (DB4S) project.
-* [Stegdetect](https://github.com/redNixon/stegdetect)                  - Stegdetect is an automated tool for detecting steganographic content in images.
 * [Stegoveritas](https://github.com/bannsec/stegoVeritas/)              - Yet another Stego Tool.
 * [Sterra](https://github.com/novitae/sterraxcyl)                       - Instagram OSINT tool to export and analyse followers | following with their details. 
 * [Telepathy](https://github.com/proseltd/Telepathy-Community)          - Public release of Telepathy, an OSINT toolkit for investigating Telegram chats.
@@ -163,13 +163,14 @@ options:
 * [Torcrawl](https://github.com/MikeMeliz/TorCrawl.py)                  - Crawl and extract (regular or onion) webpages through TOR network.
 * [Translate-shell](https://github.com/soimort/translate-shell)         - Command-line translator using Google Translate, Bing Translator, Yandex.Translate, etc.
 * [Trape](https://github.com/jofpin/trape)                              - People tracker on the Internet: OSINT analysis and research tool by Jose Pino.
-* [Twint](https://github.com/twintproject/twint)                        - An advanced Twitter scraping & OSINT tool written in Python that doesn't use Twitter's API.
+* [Twint-zero](https://github.com/twintproject/twint-zero)              - Old Twint style, but zero fat.
 * [Unredacted](https://github.com/BishopFox/unredacter)                 - Never ever ever use pixelation as a redaction technique.
 * [Vt-cli](https://github.com/VirusTotal/vt-cli)                        - VirusTotal Command Line Interface.
 * [Waybackpy](https://github.com/akamhy/waybackpy)                      - Wayback Machine API interface & a command-line tool.
 * [Wafw00f](https://github.com/EnableSecurity/wafw00f)                  - WAFW00F allows one to identify and fingerprint Web Application Firewall (WAF) products protecting a website.
 * [Whatbreach](https://github.com/Ekultek/WhatBreach)                   - OSINT tool to find breached emails, databases, pastes, and relevant information.
 * [Xeuledoc](https://github.com/Malfrats/xeuledoc)                      - Fetch information about a public Google document.
+* [Yara](https://github.com/VirusTotal/yara)                            - The pattern matching swiss knife.
 * [Yoga](https://github.com/WebBreacher/yoga)                           - Your OSINT Graphical Analyzer.
 * [Yt-dlp](https://github.com/yt-dlp/yt-dlp)                            - A youtube-dl fork with additional features and fixes.
 * [Zen](https://github.com/s0md3v/Zen)                                  - Find emails of Github users.
@@ -177,6 +178,7 @@ options:
 
 # 📚 Resources
 * [DeepdarkCTI](https://github.com/fastfire/deepdarkCTI) resources.
+* [Google dorks list](https://github.com/BullsEye0/google_dork_list) resources.
 * [Offshoreleaks data](https://github.com/ICIJ/offshoreleaks-data-packages) dump for [neo4j](https://github.com/neo4j/neo4j).
 * [Osint awesome lists](https://github.com/sindresorhus/awesome) resources.
 * [Osint bookmarks](https://github.com/OhShINT/ohshint.gitbook.io/blob/main/Lists_of_OSINT_Web_Resources/Bookmarks/1_Complete_Bookmarks_Organized_18-4-2023_ohshint.html) from [OhShINTt].(https://github.com/OhShINT)
@@ -196,6 +198,14 @@ options:
 * Vim with [custum vimrc](https://github.com/amix/vimrc).
 * Zsh with [ohmyzsh framework](https://github.com/ohmyzsh/ohmyzsh).
 
+# 👀 Watchlist
+List of usefull tools on watchlist, currently not functionnal. Bring back when updated.
+* [EagleEye](https://github.com/ThoughtfulDev/EagleEye)[Disfunctionnal, depends on face_recognition]
+* [Osrframework](https://github.com/i3visio/osrframework)[Deprecated]
+* [Pepe](https://github.com/woj-ciech/pepe)[Deprecated]
+* [SMS](https://github.com/nemec/snapchat-map-scraper)[Disfunctionnal]
+* [Socialpwned](https://github.com/MrTuxx/SocialPwned)[Disfunctionnal, depends on twint]
+* [Twint](https://github.com/twintproject/twint)[Deprecated]
 
 # ✉️ Credits
 * All author and contributor for the projects, resources, tools and more mentioned in this project.
