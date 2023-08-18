@@ -92,6 +92,7 @@ options:
 * [Mailcat](https://github.com/sharsil/mailcat)                         - Find existing email addresses by nickname using API/SMTP checking methods without user notification.
 * [Maigret](https://github.com/soxoj/maigret)                           - Collect a dossier on a person by username from thousands of sites.
 * [Maltego](https://www.maltego.com/)                                   - Comprehensive tool for graphical link analyses that offers real-time data mining and information gathering.
+* [Masto](https://github.com/C3n7ral051nt4g3ncy/Masto)                  - Masto is an OSINT tool written in python to gather intelligence on Mastodon users and instances.
 * [Metagoofil](https://github.com/laramies/metagoofil)                  - Metadata harvester.
 * [Moriarty-Project](https://github.com/AzizKpln/Moriarty-Project)      - This tool gives information about the phone number that you entered.
 * [Mpv](https://github.com/mpv-player/mpv)                              - Command line video player.
@@ -104,6 +105,7 @@ options:
 * [Phonia](https:/$/github.com/coredamage/phonia)                        - Phonia Toolkit is one of the most advanced toolkits to scan phone numbers using only free resources.
 * [Photon](https://github.com/s0md3v/Photon)                            - Incredibly fast crawler designed for OSINT. 
 * [PD](https://github.com/limkokhole/pinterest-downloader)              - Download all images/videos from Pinterest user/board/section.
+* [Proton1ntelligence](https://github.com/C3n7ral051nt4g3ncy/Prot1ntelligence) - Protintelligence is a Python script for helps you to find intelligence on Protonmail users.
 * [Protosint](https://github.com/pixelbubble/ProtOSINT)                 - ProtOSINT is a Python script that helps you investigate Protonmail accounts and ProtonVPN IP addresses.
 * [Pwndb](https://github.com/davidtavarez/pwndb)                        - Search for leaked credentials.
 * [PwnedOrNot](https://github.com/thewhiteh4t/pwnedOrNot)               - OSINT Tool for Finding Passwords of Compromised Email Addresses.
@@ -140,6 +142,7 @@ options:
 * [Vt-cli](https://github.com/VirusTotal/vt-cli)                        - VirusTotal Command Line Interface.
 * [Waybackpy](https://github.com/akamhy/waybackpy)                      - Wayback Machine API interface & a command-line tool.
 * [Wafw00f](https://github.com/EnableSecurity/wafw00f)                  - WAFW00F allows one to identify and fingerprint Web Application Firewall (WAF) products protecting a website.
+* [WebOsint](https://github.com/C3n7ral051nt4g3ncy/WebOSINT)            - W3b0s1nt (WebOSINT) is a Python tool/script for passive Domain Intelligence gathering.
 * [Whatbreach](https://github.com/Ekultek/WhatBreach)                   - OSINT tool to find breached emails, databases, pastes, and relevant information.
 * [Xeuledoc](https://github.com/Malfrats/xeuledoc)                      - Fetch information about a public Google document.
 * [Yara](https://github.com/VirusTotal/yara)                            - The pattern matching swiss knife.
