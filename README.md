@@ -63,7 +63,7 @@ options:
 * [Email2phonenumber](https://github.com/martinvigo/email2phonenumber)  - A OSINT tool to obtain a target's phone number just by having his email address.
 * [Exiflooter](https://github.com/aydinnyunus/exifLooter)               - ExifLooter finds geolocation on all image urls and directories also integrates with OpenStreetMap.
 * [Exiv2](https://github.com/Exiv2/exiv2)                               - Image metadata library and tools.
-* [Face_recognition](https://github.com/ageitgey/face_recognition)      - The world's simplest facial recognition api for Python and the command line.
+*      - The world's simplest facial recognition api for Python and the command line.
 * [FacebookOsint](https://github.com/tomoneill19/FacebookOSINT)         - FBOSINT - A tool to replace facebook graph search Resources.
 * [Fake-sms](https://github.com/Narasimha1997/fake-sms)                 - A tool to skip phone number based SMS verification by using a temporary phone number that acts like a proxy. 
 * [Fbi](https://github.com/xHak9x/fbi)                                  - Facebook Information.
@@ -172,12 +172,13 @@ options:
 
 # 👀 Watchlist
 List of usefull tools on watchlist, currently not functionnal. Bring back when updated.
-* [EagleEye](https://github.com/ThoughtfulDev/EagleEye)[Disfunctionnal, depends on face_recognition]
-* [Osrframework](https://github.com/i3visio/osrframework)[Deprecated]
-* [Pepe](https://github.com/woj-ciech/pepe)[Deprecated]
-* [SMS](https://github.com/nemec/snapchat-map-scraper)[Disfunctionnal]
-* [Socialpwned](https://github.com/MrTuxx/SocialPwned)[Disfunctionnal, depends on twint]
-* [Twint](https://github.com/twintproject/twint)[Deprecated]
+* [EagleEye](https://github.com/ThoughtfulDev/EagleEye)[Disfunctionnal, depends on face_recognition].
+* [Face_recognition](https://github.com/ageitgey/face_recognition)[Disfunctionnal]
+* [Osrframework](https://github.com/i3visio/osrframework)[Deprecated].
+* [Pepe](https://github.com/woj-ciech/pepe)[Deprecated].
+* [SMS](https://github.com/nemec/snapchat-map-scraper)[Disfunctionnal].
+* [Socialpwned](https://github.com/MrTuxx/SocialPwned)[Disfunctionnal, depends on twint].
+* [Twint](https://github.com/twintproject/twint)[Deprecated].
 
 # ✉️ Credits
 * All author and contributor for the projects, resources, tools and more mentioned in this project.
