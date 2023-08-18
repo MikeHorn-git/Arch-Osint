@@ -61,9 +61,9 @@ options:
 * [DumpsterDiver](https://github.com/securing/DumpsterDiver)            - Tool to search secrets in various filetypes.
 * [Elasticsearch](https://github.com/elastic/elasticsearch)             - Free and Open, Distributed, RESTful Search Engine.
 * [Email2phonenumber](https://github.com/martinvigo/email2phonenumber)  - A OSINT tool to obtain a target's phone number just by having his email address.
+* [Emdofi](https://github.com/novitae/emdofi)                           - Uncovers a censored email's domain
 * [Exiflooter](https://github.com/aydinnyunus/exifLooter)               - ExifLooter finds geolocation on all image urls and directories also integrates with OpenStreetMap.
 * [Exiv2](https://github.com/Exiv2/exiv2)                               - Image metadata library and tools.
-*      - The world's simplest facial recognition api for Python and the command line.
 * [FacebookOsint](https://github.com/tomoneill19/FacebookOSINT)         - FBOSINT - A tool to replace facebook graph search Resources.
 * [Fake-sms](https://github.com/Narasimha1997/fake-sms)                 - A tool to skip phone number based SMS verification by using a temporary phone number that acts like a proxy. 
 * [Fbi](https://github.com/xHak9x/fbi)                                  - Facebook Information.
