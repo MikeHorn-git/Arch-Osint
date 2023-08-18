@@ -59,7 +59,6 @@ options:
 * [Crosslinked](https://github.com/m8sec/CrossLinked)                   - LinkedIn enumeration tool to extract valid employee names from an organization through search engine scraping. 
 * [Drawio](https://github.com/jgraph/drawio)                            - Draw.io is a JavaScript, client-side editor for general diagramming and whiteboarding.
 * [DumpsterDiver](https://github.com/securing/DumpsterDiver)            - Tool to search secrets in various filetypes.
-* [EagleEye]()                 - Stalk your Friends. Find their Instagram, FB and Twitter Profiles using Image Recognition and Reverse Image Search.
 * [Elasticsearch](https://github.com/elastic/elasticsearch)             - Free and Open, Distributed, RESTful Search Engine.
 * [Email2phonenumber](https://github.com/martinvigo/email2phonenumber)  - A OSINT tool to obtain a target's phone number just by having his email address.
 * [Exiflooter](https://github.com/aydinnyunus/exifLooter)               - ExifLooter finds geolocation on all image urls and directories also integrates with OpenStreetMap.
