@@ -229,13 +229,14 @@ resources() {
 	echo -e "${GREEN}[*] Download neo4j gui${ENDCOLOR}"
 	sudo -u "$user" yay --noconfirm -S neo4j-desktop
 	echo -e "${GREEN}[*] Download offshoreleaks data for neo4j${ENDCOLOR}"
-	cd /opt/resources/datas || $leave
+	cd /opt/resources/data || $leave
 	git clone https://github.com/ICIJ/offshoreleaks-data-packages.git
 	chown -R "$user" ./offshoreleaks-data-packages
 
 	echo -e "{GREEN}[*] Download international sanctions lists${ENDCOLOR}"
 	curl -s https://github.com/bigger312/Sanctions-Lists/raw/master/sanction%20Lists%20GIT.xls -o sanction-lists.xls
 	chown "$user" ./sanction-lists.xls
+	cd /home/"$user"/Desktop || $leave
 	clear
 	sleep 2
 }
