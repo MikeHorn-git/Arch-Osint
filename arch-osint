@@ -24,9 +24,6 @@
 #SOFTWARE.									#
 #################################################################################
 
-#Error message
-leave="echo -e '${LRED}[+] Abort, an unexpected error occured${ENDCOLOR}" || exit
-
 #Loggin user variable
 user=$(echo "$(logname)")
 
@@ -40,6 +37,9 @@ ENDCOLOR="\e[0m"
 LRED="\e[91m"
 LGREEN="\e[92m"
 LGREY="\e[37m"
+
+#Error message
+leave="echo -e '${LRED}[+] Abort, an unexpected error occured${ENDCOLOR}" || exit
 
 #Check if run as root
 if [ "$EUID" -ne 0 ]; then
@@ -72,7 +72,7 @@ setup() {
 		echo -e "${LGREEN}[*] Firefox installed${ENDCOLOR}"
 	else
 		echo -e "${GREY}[*] Install Firefox${ENDCOLOR}"
-		$pacman --noconfirm -S firefox
+		pacman --noconfirm -S firefox
 	fi
 
 	if command -v pip3 &>/dev/null; then
@@ -354,12 +354,12 @@ misc() {
 	sudo -u "$user" git clone --depth=1 https://github.com/amix/vimrc.git /home/"$user"/.vim_runtime
 	cd /home/"$user"/.vim_runtime || $leave
 	sudo -u "$user" set runtimepath+=/home/"$user"/.vim_runtime
-	sudo -u "$user" source /home/"$user"/.vim_runtime/vimrcs/basic.vim
-	sudo -u "$user" source /home/"$user"/.vim_runtime/vimrcs/filetypes.vim
-	sudo -u "$user" source /home/"$user"/.vim_runtime/vimrcs/plugins_config.vim_runtime
-	sudo -u "$user" source /home/"$user"/.vim_runtime/vimrcs/extended.vim
+	source /home/"$user"/.vim_runtime/vimrcs/basic.vim
+	source /home/"$user"/.vim_runtime/vimrcs/filetypes.vim
+	source /home/"$user"/.vim_runtime/vimrcs/plugins_config.vim_runtime
+	source /home/"$user"/.vim_runtime/vimrcs/extended.vim
 	try
-	sudo -u "$user" source ~/home/"$user"/.vim_runtime/my_configs.vim
+	source ~/home/"$user"/.vim_runtime/my_configs.vim
 	catch
 	clear
 
