@@ -1,0 +1,486 @@
+#! /bin/bash
+
+#################################################################################
+#MIT License									#
+#										#
+#Copyright (c) 2023 MikeHorn-git						#
+#										#
+#Permission is hereby granted, free of charge, to any person obtaining a copy	#
+#of this software and associated documentation files (the "Software"), to deal	#
+#in the Software without restriction, including without limitation the rights	#
+#to use, copy, modify, merge, publish, distribute, sublicense, and/or sell	#
+#copies of the Software, and to permit persons to whom the Software is		#
+#furnished to do so, subject to the following conditions:			#
+#										#
+#The above copyright notice and this permission notice shall be included in all	#
+#copies or substantial portions of the Software.				#
+#										#
+#THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR	#
+#IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,	#
+#FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE	#
+#AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER		#
+#LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,	#
+#OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE	#
+#SOFTWARE.									#
+#################################################################################
+
+#Error message
+leave="echo [+] Abort, an unexpected error occured" || exit
+
+#Loggin user variable
+user=$(echo "$(logname)")
+
+#Colors variables
+GREEN="\e[32m"
+YELLOW="\e[33m"
+MAGENTA="\e[35m"
+CYAN="\e[36m"
+GREY="\e[90m"
+ENDCOLOR="\e[0m"
+LRED="\e[91m"
+LGREEN="\e[92m"
+LGREY="\e[37m"
+
+#Check if run as root
+if [ "$EUID" -ne 0 ]; then
+	echo -e "${LRED}[*] Abort, run as root${ENDCOLOR}" && exit
+fi
+
+#Check internet connection
+if ! curl -s -D- https://archlinux.org >/dev/null 2>&1; then
+	echo -e "${LRED}[+] Abort, run with an internet connection${ENDCOLOR}"
+fi
+
+setup() {
+	echo -e "${GREY}[+] Setup${ENDCOLOR}"
+	echo -e "${GREY}[*] Update system${ENDCOLOR}"
+	pacman --noconfirm -Syyu
+	if command -v pacman &>/dev/null; then
+		echo -e "${LGREEN}[*] Pacman detected${ENDCOLOR}"
+	else
+		echo -e "${LRED}[*] Abort, pacman not detected${ENDCOLOR}" || $leave
+	fi
+
+	if command -v git &>/dev/null; then
+		echo -e "${LGREEN}[*] Git installed${ENDCOLOR}"
+	else
+		echo "${GREY}[*] Install Git${ENDCOLOR}"
+		pacman --noconfirm -S git
+	fi
+
+	if command -v firefox &>/dev/null; then
+		echo -e "${LGREEN}[*] Firefox installed${ENDCOLOR}"
+	else
+		echo -e "${GREY}[*] Install Firefox${ENDCOLOR}"
+		pacman --noconfirm -S firefox
+	fi
+
+	if command -v pip3 &>/dev/null; then
+		echo -e "${LGREEN}[*] Pip3 installed${ENDCOLOR}"
+	else
+		echo -e "${GREY}[*] Install Pip3${ENDCOLOR}"
+		pacman --noconfirm -S python-pip
+	fi
+
+	if command -v unrar &>/dev/null; then
+		echo -e "${LGREEN}[*] Unrar installed${ENDCOLOR}"
+	else
+		echo -e "${GREY}[*] Install Unrar${ENDCOLOR}"
+		pacman --noconfirm -S unrar
+	fi
+	clear
+	sleep 2
+
+	echo -e "${GREY}[*] Add blackarch repositorie${ENDCOLOR}"
+	curl -s -O "https://blackarch.org/strap.sh"
+	echo 5ea40d49ecd14c2e024deecf90605426db97ea0c strap.sh | sha1sum -c
+	chmod +x strap.sh
+	./strap.sh
+	pacman --noconfirm -Syyu
+
+	echo -e "${GREY}[*] Add yay${ENDCOLOR}"
+	if command -v yay &>/dev/null; then
+		echo -e "${LGREEN}[*] Yay installed${ENDCOLOR}"
+	else
+		echo -e "${GREY}[*] Install Yay${ENDCOLOR}"
+		pacman --noconfirm -S yay
+	fi
+	clear
+	sleep 2
+}
+
+tools() {
+	echo -e "${YELLOW}[+] Install tools${ENDCOLOR}"
+	echo -e "${YELLOW}[*] With pacman${ENDCOLOR}"
+	pacman --noconfirm -S amass atscan binwalk cardpwn crosslinked elasticsearch email2phonenumber exiflooter exiv2 facebookosint fbi fierce finalrecon \
+		githound gitleaks gobuster gophish gowitness h8mail harpoon holehe instagramosint kamerka linkedin2username maigret maltego metagoofil mpv \
+		onionsearch osintgram phoneinfoga phonia photon protosint pwnedornot python-shodan python-social-analyzer qgis recon-ng sherlock skiptracer \
+		slackpirate sleuthkit spiderfoot sqlitebrowser stegoveritas theharvester tinfoleak2 torbrowser-launcher torcrawl translate-shell trape \
+		vt-cli wafw00f whatbreach yt-dlp
+	clear
+	sleep 2
+
+	echo -e "${YELLOW}[*] With AUR${ENDCOLOR}"
+	sudo -u "$user" yay --noconfirm -S python-bdfr-git chatgpt-shell-cli-git drawio-desktop-bin dumpsterdiver-git gallery-dl-bin google-earth-pro \
+		instaloader pinterest-downloader-git pwndb ripme-bin waybackpy
+	clear
+	sleep 2
+
+	echo -e "${YELLOW}[*] From github in /opt/tools${ENDCOLOR}"
+	if [ ! -d /opt/tools ]; then
+		mkdir -p /opt/tools
+	else
+		"${LRED}[+] Abort, /opt/tools already exist${ENDCOLOR}"
+	fi
+	cd /opt/tools || $leave
+	git clone https://github.com/p1ngul1n0/blackbird.git
+	git clone https://github.com/Lazza/Carbon14.git
+	git clone https://github.com/initstring/cloud_enum.git
+	git clone https://github.com/Narasimha1997/fake-sms.git
+	git clone https://github.com/sharsil/mailcat.git
+	git clone https://github.com/AzizKpln/Moriarty-Project.git
+	git clone https://github.com/Malfrats/OSINT-Map.git
+	git clone https://github.com/C3n7ral051nt4g3ncy/Prot1ntelligence.git
+	git clone https://github.com/mxrch/revealin.git
+	git clone https://github.com/GuidoBartoli/sherloq.git
+	git clone https://github.com/Viralmaniar/SMWYG-Show-Me-What-You-Got.git
+	git clone https://github.com/snooppr/snoop.git
+	git clone https://github.com/NicholasDollick/Snooper.git
+	git clone https://github.com/pielco11/telescan.git
+	git clone https://github.com/twintproject/twint-zero
+	cd twint-zero || $leave
+	go mod init twint-zero
+	go mod tidy
+	cd /opt/tools || $leave
+	git clone https://github.com/BishopFox/unredacter.git
+	git clone https://github.com/C3n7ral051nt4g3ncy/WebOSINT.git
+	git clone https://github.com/WebBreacher/yoga.git
+	git clone https://github.com/s0md3v/Zen.git
+	mkdir /opt/tools/sonicvisualiser
+	cd /opt/tools/sonicvisualiser || $leave
+	curl https://code.soundsoftware.ac.uk/attachments/download/2847/SonicVisualiser-4.5.2-x86_64.AppImage -o sonicvisualiser.AppImage
+	chmod +x sonicvisualiser.AppImage
+	clear
+	sleep 2
+
+	echo -e "${YELLOW}[+] Install post dependencies${ENDCOLOR}"
+	pacman --noconfirm -S inetutils python-aiosmtplib python-ascii_graph python-cachetools python-gevent python-html2text python-opencv \
+		python-playwright python-praw python-pycrtsh python-pyvirtualdisplay python-requests-html python-tzlocal speedtest-cli
+	sudo -u "$user" yay --noconfirm -S python-playsound python-pyrogram python-tgcrypto
+
+	echo -e "${YELLOW}[*] With pip3${ENDCOLOR}"
+	pip3 install --break-system-packages ghunt gitfive ignorant instagram-location-search masto nqntnqnqmb octosuite sterra telepathy tiktok-downloader \
+		xeuledoc
+	pip3 install --break-system-packages git+https://github.com/novitae/emdofi.git
+	clear
+	sleep 2
+	cd /home/"$user"/Desktop || $leave
+	clear
+	sleep 2
+}
+
+resources() {
+	echo -e "${GREEN}[+] Download resources in /opt/resources${ENDCOLOR}"
+	if [ ! -d /opt/resources ]; then
+		mkdir -p /opt/resources
+	else
+		echo -e "${LRED}[*] Abort, /opt/resources already exist${ENDCOLOR}" && exit
+	fi
+	mkdir /opt/resources/bookmarks
+	mkdir /opt/resources/data
+	mkdir /opt/resources/guides
+	mkdir /opt/resources/lists
+	mkdir /opt/resources/startme
+
+	echo -e "${GREEN}[*] Download bookmarks${ENDCOLOR}"
+	cd /opt/resources/bookmarks || $leave
+	curl -s https://github.com/OhShINT/ohshint.gitbook.io/blob/main/Lists_of_OSINT_Web_Resources/Bookmarks/1_Complete_Bookmarks_Organized_18-4-2023_ohshint.html -o ohshint.html
+	curl -s https://www.osintcombine.com/osint-bookmarks -o osintcombine.html
+
+	echo -e "${GREEN}[*] Download startme pages${ENDCOLOR}"
+	cd /opt/resources/startme || $leave
+	curl -s https://start.me/p/rxeRqr/aml-toolbox -o aml-toolbox.html
+	curl -s https://start.me/p/ZME8nR/osint -o digintel.html
+	curl -s https://start.me/p/BnrMKd/01-ncso -o ncso.html
+	curl -s https://start.me/p/1kBrw9/sans-osint-2022 -o sans-osint-2022.html
+	curl -s https://start.me/p/DPYPMz/the-ultimate-osint-collection -o ultimate-osint-collection.html
+
+	echo -e "${GREEN}[*] Download awesome lists${ENDCOLOR}"
+	cd /opt/resources/lists || $leave
+	git clone https://github.com/C3n7ral051nt4g3ncy/OSINT_Inception-links.git
+	curl -s https://raw.githubusercontent.com/jivoi/awesome-osint/master/README.md -o awesome-osint.md
+	curl -s https://raw.githubusercontent.com/r3mlab/datajournalism-resources/master/README.md -o datajournalism-resources.md
+	curl -s https://raw.githubusercontent.com/cqcore/OSINT-Browser-Extensions/main/README.md -o osint-browser-extensions.md
+	curl -s https://raw.githubusercontent.com/Ph055a/OSINT_Collection/master/README.md -o osint-collection.md
+
+	echo -e "${GREEN}[*] Download osint guides${ENDCOLOR}"
+	cd /opt/resources/guides || $leave
+	curl -s https://anonymousplanet.org/export/guide.pdf -o anonymousplanet.org
+	curl -s https://raw.githubusercontent.com/OffcierCia/non-typical-OSINT-guide/main/README.md -o non-typical-OSINT-guide.md
+	clear
+	sleep 2
+
+	echo -e "${GREEN}[*] Download CTI sources from the deep and dark web${ENDCOLOR}"
+	git clone https://github.com/fastfire/deepdarkCTI.git
+
+	echo -e "${GREEN}[*] Download Google dork list${ENDCOLOR}"
+	git clone https://github.com/BullsEye0/google_dork_list.git
+
+	echo -e "${GREEN}[*] Download neo4j gui${ENDCOLOR}"
+	sudo -u "$user" yay --noconfirm -S neo4j-desktop
+	echo -e "${GREEN}[*] Download offshoreleaks data for neo4j${ENDCOLOR}"
+	cd /opt/resources/datas || $leave
+	git clone https://github.com/ICIJ/offshoreleaks-data-packages.git
+	chown -R "$user" ./offshoreleaks-data-packages
+
+	echo -e "{GREEN}[*] Download international sanctions lists${ENDCOLOR}"
+	curl -s https://github.com/bigger312/Sanctions-Lists/raw/master/sanction%20Lists%20GIT.xls -o sanction-lists.xls
+	chown "$user" ./sanction-lists.xls
+	clear
+	sleep 2
+}
+
+misc() {
+	echo -e "${CYAN}[+] Install miscellaneous features${ENDCOLOR}"
+	echo -e "${GREEN}[*] Download desktop background${ENDCOLOR}"
+	cd /home/"$user"/Desktop || $leave
+	curl -s https://user-images.githubusercontent.com/123373126/261423190-c61c479f-b84e-41bb-8d17-fa8bea799f57.png -o background.png
+	chown "$user" ./background.jpg
+
+	echo -e "${GREEN}[*] Install disk encryption softawre veracrypt${ENDCOLOR}"
+	pacman --noconfirm -S veracrypt
+
+	echo -e "${CYAN}[*] Hardened arch linux system${ENDCOLOR}"
+	echo -e "${CYAN}[-] Install hardened kernel${ENDCOLOR}"
+	pacman --noconfirm linux-hardened-headers linux-hardened
+	grub-mkconfig -o /boot/grub/grub.cfg
+	echo -e "${CYAN}[-] Install microcode packages${ENDCOLOR}"
+	pacman --noconfirm -S amd-ucode intel-ucode
+	echo -e "${CYAN}[-] Disable core dump${ENDCOLOR}"
+	sysctl kernel.core_pattern= | /bin/false
+	mkdir -p /etc/systemd/coredump.conf.d/
+	bash -c "echo '	[Coredump]
+	Storage=none' > /etc/systemd/coredump.conf.d/disable.conf"
+	echo -e "${CYAN}[-] Install hardened tools${ENDCOLOR}"
+	pacman --noconfirm -S arch-audit haveged lynis
+	systemctl enable --now haveged.service
+	echo -e "${CYAN}[-] Restrict files permission${ENDCOLOR}"
+	chmod 700 /home/"$user"
+	chmod 700 /boot /usr/src /lib/modules /usr/lib/modules
+	echo -e "${CYAN}[-] Blacklist kernel modules${ENDCOLOR}"
+	bash -c "echo '	install firewire-core /bin/true
+	install thunderbolt /bin/true
+	install dccp /bin/false
+	install sctp /bin/false
+	install rds /bin/false
+	install tipc /bin/false
+	install n-hdlc /bin/false
+	install ax25 /bin/false
+	install netrom /bin/false
+	install x25 /bin/false
+	install rose /bin/false
+	install decnet /bin/false
+	install econet /bin/false
+	install af_802154 /bin/false
+	install ipx /bin/false
+	install appletalk /bin/false
+	install psnap /bin/false
+	install p8023 /bin/false
+	install p8022 /bin/false
+	install can /bin/false
+	install atm /bin/false
+	install bluetooth /bin/false
+	install uvcvideo /bin/false
+	install vivid /bin/false
+	install cifs /bin/true
+	install nfs /bin/true
+	install nfsv3 /bin/true
+	install nfsv4 /bin/true
+	install ksmbd /bin/true
+	install gfs2 /bin/true
+	install cramfs /bin/false
+	install freevxfs /bin/false
+	install jffs2 /bin/false
+	install hfs /bin/false
+	install hfsplus /bin/false
+	install squashfs /bin/false
+	install udf /bin/false' > /etc/modprobe.d/blacklist.conf"
+
+	echo -e "${CYAN}[*] Hardened firefox with user.js${ENDCOLOR}"
+	cd /home/"$user"/.mozilla/firefox/*.default-release || $leave
+	curl -s -O https://raw.githubusercontent.com/arkenfox/user.js/master/user.js
+
+	echo -e "${CYAN}[*] Install and configure ufw with default policy${ENDCOLOR}"
+	pacman --noconfirm -S ufw
+	systemctl enable ufw.service --now
+	ufw default deny incoming
+	ufw default allow outgoing
+	ufw enable
+
+	echo -e "${GREEN}[*] Install joplin with osint notebook${ENDCOLOR}"
+	sudo -u "$user" yay --noconfirm -S joplin-appimage
+	cd /opt/resources || $leave
+	curl -s -O https://github.com/tjnull/TJ-OSINT-Notebook/raw/main/TJ-OSINT-Notebook-v1.jex
+	chown "$user" ./TJ-OSINT-Notebook-v1.jex
+
+	echo -e "${CYAN}[*] Install macchanger with systemd unit${ENDCOLOR}"
+	pacman --noconfirm -S macchanger
+	bash -c "echo '	[Unit]
+	Description=macchanger on %I
+	Wants=network-pre.target
+	Before=network-pre.target
+	BindsTo=sys-subsystem-net-devices-%i.device
+	After=sys-subsystem-net-devices-%i.device
+
+	[Service]
+	ExecStart=/usr/bin/macchanger -e %I
+	Type=oneshot
+
+	[Install]
+	WantedBy=multi-user.target' > /etc/systemd/system/macchanger.service"
+	systemctl enable macchanger.service --now
+
+	echo -e "${CYAN}[*] Install privacy tools${ENDCOLOR}"
+	pacman --noconfirm -S bleachbit mat2 proxychains-ng torctl
+
+	echo -e "${CYAN}[*] Install vim with custom vimrc${ENDCOLOR}"
+	if command -v vim &>/dev/null; then
+		echo -e "${LGREEN}[-] Vim installed${ENDCOLOR}"
+	else
+		pacman --noconfirm -S vim 2>/dev/null
+		echo -e "${CYAN}[-] Install Vim${ENDCOLOR}"
+	fi
+	sudo -u "$user" git clone --depth=1 https://github.com/amix/vimrc.git /home/"$user"/.vim_runtime
+	cd /home/"$user"/.vim_runtime || $leave
+	sudo -u "$user" set runtimepath+=/home/"$user"/.vim_runtime
+	source /home/"$user"/.vim_runtime/vimrcs/basic.vim
+	source /home/"$user"/.vim_runtime/vimrcs/filetypes.vim
+	source /home/"$user"/.vim_runtime/vimrcs/plugins_config.vim_runtime
+	source /home/"$user"/.vim_runtime/vimrcs/extended.vim
+	try
+	source ~/home/"$user"/.vim_runtime/my_configs.vim
+	catch
+	clear
+
+	echo -e "${CYAN}[*] Install waydroid${ENDCOLOR}"
+	sudo -u "$user" yay --noconfirm -S waydroid binder_linux-dkms
+	systemctl enable waydroid-container.service --now
+
+	echo -e "${CYAN}[*] Configure zsh shell${ENDCOLOR}"
+	if [ "$(echo "$SHELL")" == /bin/zsh ]; then
+		echo -e "${LGREEN}[-] Zsh detected${ENDCOLOR}"
+	else
+		echo -e "${CYAN}[-] Install Zsh${ENDCOLOR}"
+		pacman --noconfirm -S zsh
+		sudo -u "$user" chsh -s /bin/zsh
+		echo -e "${CYAN}[-] Change default shell to zsh${ENDCOLOR}"
+	fi
+	cd /home/"$user"/Desktop || $leave
+
+	echo -e "${CYAN}[-] Install OhMyZsh${ENDCOLOR}"
+	sudo -u "$user" sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+	clear
+	sleep 2
+}
+
+todo() {
+	echo -e "${MAGENTA}[+] Tasks to be done manually${ENDCOLOR}"
+	echo -e "${MAGENTA}[*] Change desktop background with ~/Desktop/background.jpg${ENDCOLOR}"
+	echo -e "${MAGENTA}[*] Configure bleachbit and torctl for better privacy${ENDCOLOR}"
+	echo -e "${MAGENTA}[*] Import bookmarks in firefox from /opt/resources/bookmarks${ENDCOLOR}"
+	echo -e "${MAGENTA}[*] Import offshoreleaks dump in neo4j from ~/Desktop/offshoreleaks-data-packages/data${ENDCOLOR}"
+	echo -e "${MAGENTA}[*] Import osint jex in joplin from ~/Desktop${ENDCOLOR}"
+	sleep 5
+	exit 1
+}
+
+usage() {
+	echo "An arch osint VM with +100 tools, multiples resources and rich features."
+	echo
+	echo "Syntax: arch-osint -[h|v|a|t|r|m]"
+	echo "options:"
+	echo "-h     Print this Help."
+	echo "-v     Print software version."
+	echo "-a     Install all scripts."
+	echo "-t     Install tools."
+	echo "-r     Install resources."
+	echo "-m     Install miscellaneous features."
+	exit 1
+}
+
+art() {
+	echo -e "                           ........  ...."
+	echo -e "                       .:::...."
+	echo -e "                    :--:..        .."
+	echo -e "                 .:--.         ....            .."
+	echo -e "                -=:.   . . ...::... .    .   .."
+	echo -e "              :---::. .    .::.......     ..::::. .   ."
+	echo -e "             ==:--:.....  ..-:...........:......-"
+	echo -e "            *+:--:...  ....:-----:::........    ."
+	echo -e "           **::--:...    :::..::--.. ..........  .."
+	echo -e "          +*=.--::.      .-:::.     .. ...       .."
+	echo -e "         :#==-::.       . .::.         :.       .."
+	echo -e "         ++=+==:          .::       . .   ..      .."
+	echo -e "        .*--+==:       .            ....         .."
+	echo -e "        :#-:==:           .... .   .......      ."
+	echo -e "        -*-:=.   .:         ..... ....   .   .  ."
+	echo -e "        :+:==      ...          .  .              ."
+	echo -e "        .+::.                              . .."
+	echo -e "         +-:::                  .."
+	echo -e "         :*:-- ..                  ..."
+	echo -e "          =+:  .:                     .."
+	echo -e "           ++: .:"
+	echo -e "            +*:.....                           . ."
+	echo -e "             =+: ......                       ....."
+	echo -e "              :-::    ....                      . ."
+	echo -e "                :--."
+	echo -e "                  :-:."
+	echo -e "                    .::::.."
+	echo -e "                       .::::."
+	echo -e "                           .................."
+}
+
+#Display an help message when no args
+if [[ ${#} -eq 0 ]]; then
+	echo "Help: arch-osint -h"
+fi
+
+optstring=":hvatrm"
+while getopts ${optstring} arg; do
+	case "${arg}" in
+	h)
+		usage
+		;;
+	v)
+		art
+		echo -e "                               ${LGREY}Version Beta${ENDCOLOR}"
+		;;
+	a)
+		art
+		setup
+		tools
+		resources
+		misc
+		todo
+		;;
+	t)
+		art
+		setup
+		tools
+		;;
+	r)
+		art
+		resources
+		todo
+		;;
+	m)
+		art
+		misc
+		;;
+
+	?)
+		echo "Invalid option: -${OPTARG}"
+		echo "Help: arch-osint -h"
+		;;
+	esac
+done
