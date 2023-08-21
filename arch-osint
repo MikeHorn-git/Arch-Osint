@@ -25,7 +25,7 @@
 #################################################################################
 
 #Error message
-leave="echo [+] Abort, an unexpected error occured" || exit
+leave="echo -e '${LRED}[+] Abort, an unexpected error occured${ENDCOLOR}" || exit
 
 #Loggin user variable
 user=$(echo "$(logname)")
