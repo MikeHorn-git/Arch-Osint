@@ -4,7 +4,7 @@
 
 # ⚠️ Warning
 Run this script in a clean, dedicated and new operating system. Certain configurations and preferences can be disable or overwrite.
-The hardened feature in miscellaneaous block some functionnalities like bluetooth, network file systems, webcams and more.
+The hardened feature in miscellaneous blocks some functionalities like Bluetooth, network file systems, webcams and more.
 
 # 📋 Table of content
 * [Description](https://github.com/MikeHorn-git/arch-osint#-description)
@@ -19,7 +19,7 @@ The hardened feature in miscellaneaous block some functionnalities like bluetoot
 * [To-do](https://github.com/MikeHorn-git/arch-osint#-to-do)
 
 # 🔍 Description
-arch-osint is a flexible bash script to transform a clean archlinux with systemd to an Osint VM. Aiming at contribute to the osint community the projetc is usefull from begginer to professionnal. Contain more than hundred tools for Osint [SOCMINT, GEOINT, IMINT and more], and other tools for helping in investigations [Utilities, Forensics, Steganography, Network and more]. For better experience the script provide resources [Bookmarks, Startme pages, Awesome lists, Guides and more] focused on Osint, and miscalleneaous features for improve Osint activties with hardened tricks, privacy tools and custom experience. The project is currently in beta
+arch-osint is a flexible bash script to transform a clean archlinux with systemd to an Osint VM. Aiming at contribute to the osint community the project is useful for beginer to professional. Contain more than hundred tools for Osint [SOCMINT, GEOINT, IMINT and more], and other tools for helping in the investigations [Utilities, Forensics, Steganography, Network and more]. For better experience the script provides resources [Bookmarks, Startme pages, Awesome lists, Guides and more] focused on Osint, and miscellaneous features for improving Osint activities with hardened tricks, privacy tools and custom experience. The project is currently in beta.
 
 
 # 👷 Installation
