@@ -187,7 +187,7 @@ List of usefull tools on watchlist, currently not functionnal. Bring back when u
 # ✉️ Credits
 * All author and contributor for the projects, resources, tools and more mentioned in this project.
 * The unknown background author.
-* [Blackarch](https://www.blackarch.org/) for their repositorie.
+* [Blackarch](https://www.blackarch.org/) for their repository.
 
 
 # 🗣️ Contribute & Support
