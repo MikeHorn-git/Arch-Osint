@@ -24,12 +24,12 @@ arch-osint is a flexible bash script to transform a clean archlinux with systemd
 
 # 👷 Installation
 ```bash
-git clone htps://github.com/MikeHorn-git/arch-osint.git
+git clone https://github.com/MikeHorn-git/arch-osint.git
 cd arch-osint
 sudo chmod +x arch-osint
-sudo ./arch-osint -$OPTION
+sudo ./arch-osint -h
 # Run with logs
-sudo ./arch-osint -$OPTION | tee logs.txt
+# sudo ./arch-osint -$OPTION | tee logs.txt
 ```
 
 # 🪶 Usage
