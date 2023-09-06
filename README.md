@@ -163,8 +163,8 @@ options:
 * Note taking and to-do [Joplin](https://github.com/laurent22/joplin) app with [osint notebook](https://github.com/tjnull/TJ-OSINT-Notebook).
 * Manipulation of MAC address by [Macchanger](https://github.com/alobbs/macchanger) with [systemd unit](https://wiki.archlinux.org/title/MAC_address_spoofing#macchanger_2).
 * Privacy tools featuring [Bleachbit](https://github.com/bleachbit/bleachbit), [Mat2](https://github.com/jvoisin/mat2), [Proxychains-ng](https://github.com/rofl0r/proxychains-ng), [Torctl](https://github.com/BlackArch/torctl).
-* Rootkit Hunter with [Rkhunter](https://www.kali.org/tools/rkhunter/)
-* Vim with [custum vimrc](https://github.com/amix/vimrc).
+* Rootkit Hunter with [Rkhunter](https://www.kali.org/tools/rkhunter/).
+* Vim with [custom vimrc](https://github.com/amix/vimrc).
 * [Waydroid](https://github.com/waydroid/waydroid) for android container-base approach.
 * Zsh with [ohmyzsh framework](https://github.com/ohmyzsh/ohmyzsh).
 
