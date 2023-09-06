@@ -1,4 +1,4 @@
-#  🌍 🕵️ Arch-Osint VM
+#  🌍 🕵️ Arch-Osint OS VM
 
 ![image](https://github.com/MikeHorn-git/arch-osint/assets/123373126/c61c479f-b84e-41bb-8d17-fa8bea799f57)
 
@@ -18,10 +18,20 @@ The hardened feature in miscellaneous blocks some functionalities like Bluetooth
 * [To-do](https://github.com/MikeHorn-git/arch-osint#-to-do)
 
 # 🔍 Description
-arch-osint is a flexible bash script to transform a clean archlinux with systemd to an Osint VM. Aiming at contribute to the osint community the project is useful for beginer to professional. Contain more than hundred tools for Osint [SOCMINT, GEOINT, IMINT and more], and other tools for helping in the investigations [Utilities, Forensics, Steganography, Network and more]. For better experience the script provides resources [Bookmarks, Startme pages, Awesome lists, Guides and more] focused on Osint, and miscellaneous features for improving Osint activities with hardened tricks, privacy tools and custom experience. The project is currently in beta.
-
+Arch-Osint containvailaible with an ova file or by running the flexible bash script in a clean archlinux VM.
+Aiming at contribute to the osint community the project is useful for beginer to professional. The VM contain more than hundred tools for Osint [SOCMINT, GEOINT, IMINT and more], and other tools for helping in the investigations [Utilities, Forensics, Steganography, Network and more].
+For better experience the script provides resources [Bookmarks, Startme pages, Awesome lists, Guides and more] focused on Osint, and miscellaneous features for improving Osint activities with hardened tricks, privacy tools and custom experience.
+The project is currently in beta.
 
 # 👷 Installation
+## 📦 OVA
+* Download the VM [here]
+* Verify the sha1sum
+```bash
+echo c0f9edd289cea916648c51cf969f95871e4b5a99  Arch-Osint.ova | sha1sum -c
+```
+
+## 🧑‍🍳 Installer
 ```bash
 git clone https://github.com/MikeHorn-git/arch-osint.git
 cd arch-osint
@@ -33,7 +43,7 @@ sudo ./arch-osint -h
 
 # 🪶 Usage
 ```bash
-An arch osint VM with +100 tools, resources and features.
+Arch-Osint Linux OS VM based on Blackarch.
 
 Syntax: arch-osint -[h|v|a|t|r|m]
 options:
@@ -154,9 +164,9 @@ options:
 * [Google dorks list](https://github.com/BullsEye0/google_dork_list) resources.
 * [Offshoreleaks data](https://github.com/ICIJ/offshoreleaks-data-packages) dump for [neo4j](https://github.com/neo4j/neo4j).
 * [Osint awesome lists](https://github.com/sindresorhus/awesome) resources.
-* [Osint bookmarks](https://github.com/OhShINT/ohshint.gitbook.io/blob/main/Lists_of_OSINT_Web_Resources/Bookmarks/1_Complete_Bookmarks_Organized_18-4-2023_ohshint.html) from [OhShINTt].(https://github.com/OhShINT)
+* Osint bookmarks
 * Osint guides resources.
-* [Osint startme pages](https://about.start.me/) resources.
+* Osint startme pages.
 * Sanction and Most wanted [lists](https://github.com/bigger312/Sanctions-Lists/).
 
 # 🌟 Miscellaneous Features
@@ -176,8 +186,8 @@ options:
 # ✉️ Credits
 * All author and contributor for the projects, resources, tools and more mentioned in this project.
 * The unknown background author.
-* [Blackarch](https://www.blackarch.org/) for their repository.
-* [Bookmarks](https://github.com/OhShINT/ohshint.gitbook.io/tree/main/Lists_of_OSINT_Web_Resources/Bookmarks) from Ohshint.
+* [Blackarch](https://www.blackarch.org/)
+* [Bookmarks](https://github.com/OhShINT/ohshint.gitbook.io/tree/main/Lists_of_OSINT_Web_Resources/Bookmarks)
 
 
 # 🗣️ Contribute & Support
