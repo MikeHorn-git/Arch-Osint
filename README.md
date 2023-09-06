@@ -1,4 +1,4 @@
-# Arch-Osint OS VM
+# 🌍 🕵️ Arch-Osint OS VM
 
 ![image](https://github.com/MikeHorn-git/arch-osint/assets/123373126/c61c479f-b84e-41bb-8d17-fa8bea799f57)
 
@@ -20,9 +20,9 @@ Run this script in a clean, dedicated and new operating system. Certain configur
 The hardened feature in miscellaneous blocks some functionalities like Bluetooth, network file systems, webcams and more.
 
 # 🔍 Description
-Arch-Osint containvailaible with an ova file or by running the flexible bash script in a clean archlinux VM.
+Arch-Osint is available with an ova file or by running the flexible bash script in a clean archlinux VM.
 
-Aiming at contribute to the osint community the project is useful for beginer to professional. The VM contain more than hundred tools for Osint [SOCMINT, GEOINT, IMINT and more], and other tools for helping in the investigations [Utilities, Forensics, Steganography, Network and more].
+Aiming at contribute to the osint community, the project is useful for beginner to professional. The OS contain more than hundred tools for Osint [SOCMINT, GEOINT, IMINT and more], and other tools for helping in the investigations [Utilities, Forensics, Steganography, Network and more].
 
 For better experience the script provides resources [Bookmarks, Startme pages, Awesome lists, Guides and more] focused on Osint, and miscellaneous features for improving Osint activities with hardened tricks, privacy tools and custom experience.
 
@@ -195,14 +195,11 @@ options:
 * [Blackarch](https://www.blackarch.org/)
 * [Bookmarks](https://github.com/OhShINT/ohshint.gitbook.io/tree/main/Lists_of_OSINT_Web_Resources/Bookmarks)
 
-
 # 🗣️ Contribute & Support
 * Feel free to contribute by giving ideas, open/fix issues, ...
 * 💫 the project if you like it, it's the best way to support.
-
 
 # 📡 To-Do
 - [ ] Add more resources and features
 - [ ] Create a iso file
 - [x] Create a ova file
-
