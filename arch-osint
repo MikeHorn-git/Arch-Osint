@@ -201,6 +201,11 @@ resources() {
 	curl -s https://raw.githubusercontent.com/cqcore/OSINT-Browser-Extensions/main/README.md -o osint-browser-extensions.md
 	curl -s https://raw.githubusercontent.com/Ph055a/OSINT_Collection/master/README.md -o osint-collection.md
 
+	echo -e "${GREEN}[*] Download bookmarks${ENDCOLOR}"
+	cd /home/"$user"/Desktop || $leave
+	curl -s -O https://raw.githubusercontent.com/MikeHorn-git/Arch-Osint/main/bookmarks.html
+	chown "$user" ./bookmarks.html
+
 	echo -e "${GREEN}[*] Download osint guides${ENDCOLOR}"
 	cd /opt/resources/guides || $leave
 	curl -s https://anonymousplanet.org/export/guide.pdf -o anonymousplanet.pdf
