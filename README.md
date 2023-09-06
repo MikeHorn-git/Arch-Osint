@@ -13,7 +13,6 @@ The hardened feature in miscellaneous blocks some functionalities like Bluetooth
 * [Tools](https://github.com/MikeHorn-git/arch-osint#%EF%B8%8F-100-tools)
 * [Resources](https://github.com/MikeHorn-git/arch-osint#-resources)
 * [Features](https://github.com/MikeHorn-git/arch-osint#-miscellaneous-features)
-* [Watchlist](https://github.com/MikeHorn-git/arch-osint#-watchlist)
 * [Credits](https://github.com/MikeHorn-git/arch-osint#%EF%B8%8F-credits)
 * [Contribute & Support](https://github.com/MikeHorn-git/arch-osint#%EF%B8%8F-contribute--support)
 * [To-do](https://github.com/MikeHorn-git/arch-osint#-to-do)
