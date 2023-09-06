@@ -28,11 +28,12 @@ For better experience the script provides resources [Bookmarks, Startme pages, A
 
 # 👷 Installation
 ## 📦 OVA
-* Download the VM [here]
+* Download the [VM]()
 * Verify the sha1sum
 ```bash
 echo c0f9edd289cea916648c51cf969f95871e4b5a99  Arch-Osint.ova | sha1sum -c
 ```
+* Credential : osint:osint
 
 ## 🧑‍🍳 Installer
 ```bash
