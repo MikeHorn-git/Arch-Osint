@@ -106,17 +106,17 @@ setup() {
 		pacman --noconfirm -S yay
 	fi
 	clear
-	sleep 2
+	sleep 5
 }
 
 tools() {
 	echo -e "${YELLOW}[+] Install tools${ENDCOLOR}"
 	echo -e "${YELLOW}[*] With pacman${ENDCOLOR}"
 	pacman --noconfirm -S amass atscan binwalk cardpwn crosslinked elasticsearch email2phonenumber exiflooter exiv2 facebookosint fbi fierce finalrecon \
-		githound gitleaks gobuster gophish gowitness h8mail harpoon holehe instagramosint kamerka linkedin2username maigret maltego metagoofil mpv \
-		onionsearch osintgram phoneinfoga phonia photon protosint pwnedornot python-shodan python-social-analyzer qgis recon-ng sherlock skiptracer \
-		slackpirate sleuthkit spiderfoot sqlitebrowser stegoveritas theharvester tinfoleak2 torbrowser-launcher torcrawl translate-shell trape \
-		vt-cli wafw00f whatbreach yt-dlp
+		githound gitleaks gobuster gophish h8mail harpoon holehe instagramosint kamerka linkedin2username maigret maltego metagoofil mpv onionsearch \
+		osintgram phoneinfoga phonia photon protosint pwnedornot python-shodan python-social-analyzer qgis recon-ng sherlock skiptracer slackpirate \
+		sleuthkit spiderfoot sqlitebrowser stegoveritas theharvester tinfoleak2 torbrowser-launcher torcrawl translate-shell trape vt-cli wafw00f \
+		whatbreach yt-dlp
 	clear
 	sleep 2
 
@@ -167,16 +167,18 @@ tools() {
 	pacman --noconfirm -S inetutils python-aiosmtplib python-ascii_graph python-cachetools python-gevent python-html2text python-opencv \
 		python-playwright python-praw python-pycrtsh python-pyvirtualdisplay python-requests-html python-tzlocal speedtest-cli
 	sudo -u "$user" yay --noconfirm -S python-playsound python-pyrogram python-tgcrypto
+	clear
+	sleep 2
 
 	echo -e "${YELLOW}[*] With pip3${ENDCOLOR}"
 	pip3 install --break-system-packages ghunt gitfive ignorant instagram-location-search masto nqntnqnqmb octosuite sterra telepathy tiktok-downloader \
 		xeuledoc
 	pip3 install --break-system-packages git+https://github.com/novitae/emdofi.git
-	clear
-	sleep 2
+	chown -R "$user" /opt/tools/
+	ln -s /opt/tools /home/"$user"/Desktop/tools
 	cd /home/"$user"/Desktop || $leave
 	clear
-	sleep 2
+	sleep 5
 }
 
 resources() {
@@ -186,24 +188,10 @@ resources() {
 	else
 		echo -e "${LRED}[*] Abort, /opt/resources already exist${ENDCOLOR}" && exit
 	fi
-	mkdir /opt/resources/bookmarks
 	mkdir /opt/resources/data
 	mkdir /opt/resources/guides
 	mkdir /opt/resources/lists
 	mkdir /opt/resources/startme
-
-	echo -e "${GREEN}[*] Download bookmarks${ENDCOLOR}"
-	cd /opt/resources/bookmarks || $leave
-	curl -s https://github.com/OhShINT/ohshint.gitbook.io/blob/main/Lists_of_OSINT_Web_Resources/Bookmarks/1_Complete_Bookmarks_Organized_18-4-2023_ohshint.html -o ohshint.html
-	curl -s https://www.osintcombine.com/osint-bookmarks -o osintcombine.html
-
-	echo -e "${GREEN}[*] Download startme pages${ENDCOLOR}"
-	cd /opt/resources/startme || $leave
-	curl -s https://start.me/p/rxeRqr/aml-toolbox -o aml-toolbox.html
-	curl -s https://start.me/p/ZME8nR/osint -o digintel.html
-	curl -s https://start.me/p/BnrMKd/01-ncso -o ncso.html
-	curl -s https://start.me/p/1kBrw9/sans-osint-2022 -o sans-osint-2022.html
-	curl -s https://start.me/p/DPYPMz/the-ultimate-osint-collection -o ultimate-osint-collection.html
 
 	echo -e "${GREEN}[*] Download awesome lists${ENDCOLOR}"
 	cd /opt/resources/lists || $leave
@@ -215,12 +203,11 @@ resources() {
 
 	echo -e "${GREEN}[*] Download osint guides${ENDCOLOR}"
 	cd /opt/resources/guides || $leave
-	curl -s https://anonymousplanet.org/export/guide.pdf -o anonymousplanet.org
+	curl -s https://anonymousplanet.org/export/guide.pdf -o anonymousplanet.pdf
 	curl -s https://raw.githubusercontent.com/OffcierCia/non-typical-OSINT-guide/main/README.md -o non-typical-OSINT-guide.md
-	clear
-	sleep 2
 
 	echo -e "${GREEN}[*] Download CTI sources from the deep and dark web${ENDCOLOR}"
+	cd /opt/resources/data || $leave
 	git clone https://github.com/fastfire/deepdarkCTI.git
 
 	echo -e "${GREEN}[*] Download Google dork list${ENDCOLOR}"
@@ -229,15 +216,15 @@ resources() {
 	echo -e "${GREEN}[*] Download neo4j gui${ENDCOLOR}"
 	sudo -u "$user" yay --noconfirm -S neo4j-desktop
 	echo -e "${GREEN}[*] Download offshoreleaks data for neo4j${ENDCOLOR}"
-	cd /opt/resources/datas || $leave
 	git clone https://github.com/ICIJ/offshoreleaks-data-packages.git
-	chown -R "$user" ./offshoreleaks-data-packages
 
 	echo -e "{GREEN}[*] Download international sanctions lists${ENDCOLOR}"
 	curl -s https://github.com/bigger312/Sanctions-Lists/raw/master/sanction%20Lists%20GIT.xls -o sanction-lists.xls
-	chown "$user" ./sanction-lists.xls
+
+	chown "$user" -R /opt/resources
+	ln -s /opt/resources /home/"$user"/Desktop/resources
 	clear
-	sleep 2
+	sleep 5
 }
 
 misc() {
@@ -249,6 +236,7 @@ misc() {
 
 	echo -e "${GREEN}[*] Install disk encryption softawre veracrypt${ENDCOLOR}"
 	pacman --noconfirm -S veracrypt
+	clear
 
 	echo -e "${CYAN}[*] Hardened arch linux system${ENDCOLOR}"
 	echo -e "${CYAN}[-] Install hardened kernel${ENDCOLOR}"
@@ -305,10 +293,12 @@ misc() {
 	install hfsplus /bin/false
 	install squashfs /bin/false
 	install udf /bin/false' > /etc/modprobe.d/blacklist.conf"
+	clear
 
 	echo -e "${CYAN}[*] Hardened firefox with user.js${ENDCOLOR}"
-	cd /home/"$user"/.mozilla/firefox/*.default-release || $leave
+	cd /home/"$user"/Desktop || $leave
 	curl -s -O https://raw.githubusercontent.com/arkenfox/user.js/master/user.js
+	chown "$user" ./user.js
 
 	echo -e "${CYAN}[*] Install and configure ufw with default policy${ENDCOLOR}"
 	pacman --noconfirm -S ufw
@@ -317,9 +307,9 @@ misc() {
 	ufw default allow outgoing
 	ufw enable
 
-	echo -e "${GREEN}[*] Install joplin with osint notebook${ENDCOLOR}"
+	echo -e "${GREEN}[*] Install joplin with Osint notebook${ENDCOLOR}"
 	sudo -u "$user" yay --noconfirm -S joplin-appimage
-	cd /opt/resources || $leave
+	cd /opt/resources/data || $leave
 	curl -s -O https://github.com/tjnull/TJ-OSINT-Notebook/raw/main/TJ-OSINT-Notebook-v1.jex
 	chown "$user" ./TJ-OSINT-Notebook-v1.jex
 
@@ -343,6 +333,9 @@ misc() {
 	echo -e "${CYAN}[*] Install privacy tools${ENDCOLOR}"
 	pacman --noconfirm -S bleachbit mat2 proxychains-ng torctl
 
+	echo -e "${CYAN}[*] Install rkhunter${ENDCOLOR}"
+	pacman --noconfirm -S rkhunter
+
 	echo -e "${CYAN}[*] Install vim with custom vimrc${ENDCOLOR}"
 	if command -v vim &>/dev/null; then
 		echo -e "${LGREEN}[-] Vim installed${ENDCOLOR}"
@@ -351,15 +344,7 @@ misc() {
 		echo -e "${CYAN}[-] Install Vim${ENDCOLOR}"
 	fi
 	sudo -u "$user" git clone --depth=1 https://github.com/amix/vimrc.git /home/"$user"/.vim_runtime
-	cd /home/"$user"/.vim_runtime || $leave
-	sudo -u "$user" set runtimepath+=/home/"$user"/.vim_runtime
-	source /home/"$user"/.vim_runtime/vimrcs/basic.vim
-	source /home/"$user"/.vim_runtime/vimrcs/filetypes.vim
-	source /home/"$user"/.vim_runtime/vimrcs/plugins_config.vim_runtime
-	source /home/"$user"/.vim_runtime/vimrcs/extended.vim
-	try
-	source ~/home/"$user"/.vim_runtime/my_configs.vim
-	catch
+	sudo -u "$user" sh ~/.vim_runtime/install_awesome_vimrc.sh
 	clear
 
 	echo -e "${CYAN}[*] Install waydroid${ENDCOLOR}"
@@ -380,17 +365,24 @@ misc() {
 	echo -e "${CYAN}[-] Install OhMyZsh${ENDCOLOR}"
 	sudo -u "$user" sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 	clear
-	sleep 2
+	sleep 5
 }
 
 todo() {
 	echo -e "${MAGENTA}[+] Tasks to be done manually${ENDCOLOR}"
-	echo -e "${MAGENTA}[*] Change desktop background with ~/Desktop/background.jpg${ENDCOLOR}"
+	sleep 1
+	echo -e "${MAGENTA}[*] Change desktop background${ENDCOLOR}"
+	sleep 1
 	echo -e "${MAGENTA}[*] Configure bleachbit and torctl for better privacy${ENDCOLOR}"
-	echo -e "${MAGENTA}[*] Import bookmarks in firefox from /opt/resources/bookmarks${ENDCOLOR}"
-	echo -e "${MAGENTA}[*] Import offshoreleaks dump in neo4j from ~/Desktop/offshoreleaks-data-packages/data${ENDCOLOR}"
-	echo -e "${MAGENTA}[*] Import osint jex in joplin from ~/Desktop${ENDCOLOR}"
-	sleep 5
+	sleep 1
+	echo -e "${MAGENTA}[*] Import bookmarks in firefox${ENDCOLOR}"
+	sleep 1
+	echo -e "${MAGENTA}[*] Import user.js in firefox directory under ~/.mozilla/${ENDCOLOR}"
+	sleep 1
+	echo -e "${MAGENTA}[*] Import offshoreleaks dump in neo4j from /opt/resources/data/offshoreleaks-data-packages/data${ENDCOLOR}"
+	sleep 1
+	echo -e "${MAGENTA}[*] Import Osint jex in joplin from /opt/resources/data${ENDCOLOR}"
+	sleep 7
 	exit 1
 }
 
