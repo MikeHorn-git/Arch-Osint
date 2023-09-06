@@ -387,7 +387,7 @@ todo() {
 }
 
 usage() {
-	echo "An arch osint VM with +100 tools, multiples resources and rich features."
+	echo "Arch-Osint Linux OS VM based on Blackarch."
 	echo
 	echo "Syntax: arch-osint -[h|v|a|t|r|m]"
 	echo "options:"
