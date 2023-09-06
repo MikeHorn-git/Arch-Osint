@@ -169,16 +169,6 @@ options:
 * [Waydroid](https://github.com/waydroid/waydroid) for android container-base approach.
 * Zsh with [ohmyzsh framework](https://github.com/ohmyzsh/ohmyzsh).
 
-# 👀 Watchlist
-List of usefull tools on watchlist, currently not functionnal. Bring back when updated.
-* [EagleEye](https://github.com/ThoughtfulDev/EagleEye)[Disfunctionnal, depends on face_recognition].
-* [Face_recognition](https://github.com/ageitgey/face_recognition)[Disfunctionnal]
-* [Osrframework](https://github.com/i3visio/osrframework)[Deprecated].
-* [Pepe](https://github.com/woj-ciech/pepe)[Deprecated].
-* [SMS](https://github.com/nemec/snapchat-map-scraper)[Disfunctionnal].
-* [Socialpwned](https://github.com/MrTuxx/SocialPwned)[Disfunctionnal, depends on twint].
-* [Twint](https://github.com/twintproject/twint)[Deprecated].
-
 # ✉️ Credits
 * All author and contributor for the projects, resources, tools and more mentioned in this project.
 * The unknown background author.
@@ -194,5 +184,5 @@ List of usefull tools on watchlist, currently not functionnal. Bring back when u
 # 📡 To-Do
 - [ ] Add more resources and features
 - [ ] Create a iso file
-- [*] Create a ova file
+- [x] Create a ova file
 
