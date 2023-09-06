@@ -1,27 +1,30 @@
-#  🌍 🕵️ Arch-Osint OS VM
+# Arch-Osint OS VM
 
 ![image](https://github.com/MikeHorn-git/arch-osint/assets/123373126/c61c479f-b84e-41bb-8d17-fa8bea799f57)
 
-# ⚠️ Warning
-Run this script in a clean, dedicated and new operating system. Certain configurations and preferences can be disable or overwrite.
-The hardened feature in miscellaneous blocks some functionalities like Bluetooth, network file systems, webcams and more.
-
 # 📋 Table of content
+* [Warning](https://github.com/MikeHorn-git/Arch-Osint#%EF%B8%8F-warning)
 * [Description](https://github.com/MikeHorn-git/arch-osint#-description)
 * [Installation](https://github.com/MikeHorn-git/arch-osint#-installation)
 * [Usage](https://github.com/MikeHorn-git/arch-osint#-usage)
 * [Tools](https://github.com/MikeHorn-git/arch-osint#%EF%B8%8F-100-tools)
 * [Resources](https://github.com/MikeHorn-git/arch-osint#-resources)
 * [Features](https://github.com/MikeHorn-git/arch-osint#-miscellaneous-features)
+* [Version](https://github.com/MikeHorn-git/arch-osint#-version)
 * [Credits](https://github.com/MikeHorn-git/arch-osint#%EF%B8%8F-credits)
 * [Contribute & Support](https://github.com/MikeHorn-git/arch-osint#%EF%B8%8F-contribute--support)
 * [To-do](https://github.com/MikeHorn-git/arch-osint#-to-do)
 
+# ⚠️ Warning
+Run this script in a clean, dedicated and new operating system. Certain configurations and preferences can be disable or overwrite.
+The hardened feature in miscellaneous blocks some functionalities like Bluetooth, network file systems, webcams and more.
+
 # 🔍 Description
 Arch-Osint containvailaible with an ova file or by running the flexible bash script in a clean archlinux VM.
+
 Aiming at contribute to the osint community the project is useful for beginer to professional. The VM contain more than hundred tools for Osint [SOCMINT, GEOINT, IMINT and more], and other tools for helping in the investigations [Utilities, Forensics, Steganography, Network and more].
+
 For better experience the script provides resources [Bookmarks, Startme pages, Awesome lists, Guides and more] focused on Osint, and miscellaneous features for improving Osint activities with hardened tricks, privacy tools and custom experience.
-The project is currently in beta.
 
 # 👷 Installation
 ## 📦 OVA
@@ -182,6 +185,9 @@ options:
 * Vim with [custom vimrc](https://github.com/amix/vimrc).
 * [Waydroid](https://github.com/waydroid/waydroid) for android container-base approach.
 * Zsh with [ohmyzsh framework](https://github.com/ohmyzsh/ohmyzsh).
+
+# 🪧 Version
+* Beta
 
 # ✉️ Credits
 * All author and contributor for the projects, resources, tools and more mentioned in this project.
