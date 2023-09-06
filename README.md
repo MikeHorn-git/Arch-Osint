@@ -55,7 +55,8 @@ options:
 * [Cardpwn](https://github.com/itsmehacker/CardPwn)                     - OSINT Tool to find Breached Credit Cards Information.
 * [Chatgpt-shell-cli](https://github.com/0xacx/chatGPT-shell-cli)       - Simple shell script to use OpenAI's ChatGPT and DALL-E from the terminal. No Python or JS required.
 * [Cloud_enum](https://github.com/initstring/cloud_enum)                - Multi-cloud OSINT tool. Enumerate public resources in AWS, Azure, and Google Cloud.
-* [Crosslinked](https://github.com/m8sec/CrossLinked)                   - LinkedIn enumeration tool to extract valid employee names from an organization through search engine scraping. 
+* [Crosslinked](https://github.com/m8sec/CrossLinked)                   - LinkedIn enumeration tool to extract valid employee names from an organization through search engine scraping.
+* [Drawio](https://github.com/jgraph/drawio)                            - Draw.io is a JavaScript, client-side editor for general diagramming and whiteboarding. 
 * [DumpsterDiver](https://github.com/securing/DumpsterDiver)            - Tool to search secrets in various filetypes.
 * [Elasticsearch](https://github.com/elastic/elasticsearch)             - Free and Open, Distributed, RESTful Search Engine.
 * [Email2phonenumber](https://github.com/martinvigo/email2phonenumber)  - A OSINT tool to obtain a target's phone number just by having his email address.
@@ -92,6 +93,7 @@ options:
 * [Masto](https://github.com/C3n7ral051nt4g3ncy/Masto)                  - Masto is an OSINT tool written in python to gather intelligence on Mastodon users and instances.
 * [Metagoofil](https://github.com/laramies/metagoofil)                  - Metadata harvester.
 * [Moriarty-Project](https://github.com/AzizKpln/Moriarty-Project)      - This tool gives information about the phone number that you entered.
+* [Mpv](https://github.com/mpv-player/mpv)                              - Command line video player.
 * [Nqntnqnqmb](https://github.com/megadose/nqntnqnqmb)                  - Allows you to retrieve information on linkedin profiles/companies and search on linkedin companies/persons.
 * [Octosuite](https://github.com/bellingcat/octosuite)                  - An all-in-one GitHub open-source intelligence framework.
 * [Onionsearch](https://github.com/megadose/OnionSearch)                - OnionSearch is a script that scrapes urls on different .onion search engines.
@@ -105,6 +107,7 @@ options:
 * [Protosint](https://github.com/pixelbubble/ProtOSINT)                 - ProtOSINT is a Python script that helps you investigate Protonmail accounts and ProtonVPN IP addresses.
 * [Pwndb](https://github.com/davidtavarez/pwndb)                        - Search for leaked credentials.
 * [PwnedOrNot](https://github.com/thewhiteh4t/pwnedOrNot)               - OSINT Tool for Finding Passwords of Compromised Email Addresses.
+* [Qgis](https://github.com/qgis/QGIS)                                  - QGIS is a free, open source, cross platform (lin/win/mac) geographical information system (GIS).
 * [Recon-ng](https://github.com/lanmaster53/recon-ng)                   - Open Source Intelligence gathering tool aimed at reducing the time spent harvesting information from open sources.
 * [Reavealin](https://github.com/mxrch/revealin)                        - Uncover the full name of a target on Linkedin.
 * [Ripme](https://github.com/RipMeApp/ripme)                            - Downloads albums in bulk.
@@ -118,6 +121,8 @@ options:
 * [Snoop](https://github.com/snooppr/snoop)                             - Snoop Project One of the most promising OSINT tools to search for nicknames.
 * [Snooper](https://github.com/NicholasDollick/Snooper)                 - OSINT Reddit user activity analyzer.
 * [Social-analyzer](https://github.com/qeeqbox/social-analyzer)         - API, CLI, and Web App for analyzing and finding a person's profile in 1000 social media \ websites.
+* [SonicVisualiser](https://www.sonicvisualiser.org/download.html)      - Sonic Visualiser is a program for viewing and exploring audio data for semantic music analysis and annotation.
+* [Sqlitebrowser](https://github.com/sqlitebrowser/sqlitebrowser)       - Official home of the DB Browser for SQLite (DB4S) project.
 * [Spiderfoot](https://github.com/smicallef/spiderfoot)                 - SpiderFoot automates OSINT for threat intelligence and mapping your attack surface.
 * [Stegoveritas](https://github.com/bannsec/stegoVeritas/)              - Yet another Stego Tool.
 * [Sterra](https://github.com/novitae/sterraxcyl)                       - Instagram OSINT tool to export and analyse followers | following with their details. 
