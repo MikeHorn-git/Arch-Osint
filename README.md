@@ -69,12 +69,13 @@ options:
 * [Cardpwn](https://github.com/itsmehacker/CardPwn)                     - OSINT Tool to find Breached Credit Cards Information.
 * [Chatgpt-shell-cli](https://github.com/0xacx/chatGPT-shell-cli)       - Simple shell script to use OpenAI's ChatGPT and DALL-E from the terminal. No Python or JS required.
 * [Cloud_enum](https://github.com/initstring/cloud_enum)                - Multi-cloud OSINT tool. Enumerate public resources in AWS, Azure, and Google Cloud.
+* [Cloud_sherlock](https://github.com/Group-IB/cloud_sherlock)          - Enum S3 buckets and SaaS.
 * [Crosslinked](https://github.com/m8sec/CrossLinked)                   - LinkedIn enumeration tool to extract valid employee names from an organization through search engine scraping.
-* [Drawio](https://github.com/jgraph/drawio)                            - Draw.io is a JavaScript, client-side editor for general diagramming and whiteboarding. 
 * [DumpsterDiver](https://github.com/securing/DumpsterDiver)            - Tool to search secrets in various filetypes.
 * [Elasticsearch](https://github.com/elastic/elasticsearch)             - Free and Open, Distributed, RESTful Search Engine.
 * [Email2phonenumber](https://github.com/martinvigo/email2phonenumber)  - A OSINT tool to obtain a target's phone number just by having his email address.
-* [Emdofi](https://github.com/novitae/emdofi)                           - Uncovers a censored email's domain
+* [Emdofi](https://github.com/novitae/emdofi)                           - Uncovers a censored email's domain.
+* [ExchangeFinder](https://github.com/mhaskar/ExchangeFinder)           - Find Microsoft Exchange instance for a given domain and identify the exact version.
 * [Exiflooter](https://github.com/aydinnyunus/exifLooter)               - ExifLooter finds geolocation on all image urls and directories also integrates with OpenStreetMap.
 * [Exiv2](https://github.com/Exiv2/exiv2)                               - Image metadata library and tools.
 * [FacebookOsint](https://github.com/tomoneill19/FacebookOSINT)         - FBOSINT - A tool to replace facebook graph search Resources.
@@ -85,11 +86,13 @@ options:
 * [FinalRecon](https://github.com/thewhiteh4t/FinalRecon)               - The Last Web Recon Tool You'll Need.
 * [Foremost](https://github.com/korczis/foremost)                       - Foremost is a console program to recover files based on their headers, footers, and internal data structures.
 * [Gallery-dl](https://github.com/mikf/gallery-dl)                      - Command-line program to download image galleries and collections from several image hosting sites.
+* [GhostTrack](https://github.com/HunxByts/GhostTrack)                  - Useful tool to track location or mobile number.
 * [Ghunt](https://github.com/mxrch/GHunt)                               - Offensive Google framework.
 * [Gitfive](https://github.com/mxrch/GitFive)                           - Track down GitHub users.
 * [Githound](https://github.com/tillson/git-hound)                      - Reconnaissance tool for GitHub code search.
 * [Gitleaks](https://github.com/gitleaks/gitleaks)                      - Protect and discover secrets using Gitleaks.
 * [Gobuster](https://github.com/OJ/gobuster)                            - Directory/File, DNS and VHost busting tool written in Go.
+* [GooFuzz](https://github.com/m3n0sd0n4ld/GooFuzz)                     - GooFuzz is a tool to perform fuzzing with an OSINT approach, managing to enumerate directories, files, subdomains or parameters.
 * [Google Earth Pro](https://www.google.com/earth/about/)               - The world's most detailed globe.
 * [Gophish](https://github.com/gophish/gophish)                         - Open-Source Phishing Toolkit.
 * [H8mail](https://github.com/khast3x/h8mail)                           - Email OSINT & Password breach hunting tool, locally or using premium services.
@@ -98,7 +101,8 @@ options:
 * [Ignorant](https://github.com/megadose/ignorant)                      - Ignorant allows you to check if a phone number is used on different sites like snapchat, instagram.
 * [ILS](https://github.com/bellingcat/instagram-location-search)        - Finds Instagram location IDs near a specified latitude and longitude.
 * [InstagramOsint](https://github.com/sc1341/InstagramOSINT)            - An Instagram Open Source Intelligence Tool.
-* [Instaloader](https://github.com/instaloader/instaloader)             - Download pictures (or videos) along with their captions and other metadata from Instagram. 
+* [Instaloader](https://github.com/instaloader/instaloader)             - Download pictures (or videos) along with their captions and other metadata from Instagram.
+* [Ipinfo](https://github.com/ipinfo/cli)                               - Official Command Line Interface for the IPinfo API (IP geolocation and other types of IP data).
 * [Kamerka](https://github.com/woj-ciech/kamerka)                       - Build interactive map of cameras from Shodan.
 * [Linkedin2username](https://github.com/initstring/linkedin2username)  - OSINT Tool: Generate username lists for companies on LinkedIn.
 * [Mailcat](https://github.com/sharsil/mailcat)                         - Find existing email addresses by nickname using API/SMTP checking methods without user notification.
@@ -109,6 +113,7 @@ options:
 * [Moriarty-Project](https://github.com/AzizKpln/Moriarty-Project)      - This tool gives information about the phone number that you entered.
 * [Mpv](https://github.com/mpv-player/mpv)                              - Command line video player.
 * [Nqntnqnqmb](https://github.com/megadose/nqntnqnqmb)                  - Allows you to retrieve information on linkedin profiles/companies and search on linkedin companies/persons.
+* [Nmap](https://nmap.org/)                                             - Utility for network discovery and security auditing.
 * [Octosuite](https://github.com/bellingcat/octosuite)                  - An all-in-one GitHub open-source intelligence framework.
 * [Onionsearch](https://github.com/megadose/OnionSearch)                - OnionSearch is a script that scrapes urls on different .onion search engines.
 * [Osintgram](https://github.com/Datalux/Osintgram)                     - Osintgram is a OSINT tool on Instagram.
@@ -121,10 +126,9 @@ options:
 * [Protosint](https://github.com/pixelbubble/ProtOSINT)                 - ProtOSINT is a Python script that helps you investigate Protonmail accounts and ProtonVPN IP addresses.
 * [Pwndb](https://github.com/davidtavarez/pwndb)                        - Search for leaked credentials.
 * [PwnedOrNot](https://github.com/thewhiteh4t/pwnedOrNot)               - OSINT Tool for Finding Passwords of Compromised Email Addresses.
-* [Qgis](https://github.com/qgis/QGIS)                                  - QGIS is a free, open source, cross platform (lin/win/mac) geographical information system (GIS).
 * [Recon-ng](https://github.com/lanmaster53/recon-ng)                   - Open Source Intelligence gathering tool aimed at reducing the time spent harvesting information from open sources.
 * [Reavealin](https://github.com/mxrch/revealin)                        - Uncover the full name of a target on Linkedin.
-* [Ripme](https://github.com/RipMeApp/ripme)                            - Downloads albums in bulk.
+* [Ripme](https://github.com/RipMeApp/ripme)                          $  - Downloads albums in bulk.
 * [Sherlock](https://github.com/sherlock-project/sherlock)              - Hunt down social media accounts by username across social networks.
 * [Shodan](https://github.com/achillean/shodan-python)                  - The official Python library for Shodan.
 * [Skiptracer](https://github.com/xillwillx/skiptracer)                 - OSINT python webscaping framework.
@@ -166,7 +170,6 @@ options:
 # 📚 Resources
 * [DeepdarkCTI](https://github.com/fastfire/deepdarkCTI) resources.
 * [Google dorks list](https://github.com/BullsEye0/google_dork_list) resources.
-* [Offshoreleaks data](https://github.com/ICIJ/offshoreleaks-data-packages) dump for [neo4j](https://github.com/neo4j/neo4j).
 * [Osint awesome lists](https://github.com/sindresorhus/awesome) resources.
 * Osint bookmarks
 * Osint guides resources.
@@ -175,7 +178,6 @@ options:
 
 # 🌟 Miscellaneous Features
 * Custom [background](https://github.com/MikeHorn-git/arch-osint/blob/main/background.jpg).
-* Disk encryption with [Veracrypt](https://veracrypt.fr/en/Home.html).
 * Firewall with the [Uncomplicated Firewall](https://launchpad.net/ufw).
 * Hardened [Firefox](https://www.mozilla.org/en-US/firefox/new/) with [user.js](https://github.com/arkenfox/user.js).
 * Hardened system featuring [Kernel hardened](https://archlinux.org/packages/extra/x86_64/linux-hardened/), [blacklist](https://wiki.archlinux.org/title/Kernel_module#Blacklisting) unwanted Kernel module, anti [core dump, file restriction](https://madaidans-insecurities.github.io/guides/linux-hardening.html), [entropy](https://github.com/jirka-h/haveged), tools and many more.  
