@@ -2,7 +2,7 @@
 
 ![image](https://github.com/MikeHorn-git/arch-osint/assets/123373126/c61c479f-b84e-41bb-8d17-fa8bea799f57)
 
-# 📋 Table of content
+# 📋 Table of contents
 * [Warning](https://github.com/MikeHorn-git/Arch-Osint#%EF%B8%8F-warning)
 * [Description](https://github.com/MikeHorn-git/arch-osint#-description)
 * [Installation](https://github.com/MikeHorn-git/arch-osint#-installation)
