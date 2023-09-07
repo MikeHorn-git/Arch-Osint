@@ -28,7 +28,7 @@ For better experience the script provides resources [Bookmarks, Startme pages, A
 
 # 👷 Installation
 ## 📦 OVA
-* Download the [VM]()
+* Download the [VM](https://mega.nz/file/O6AwgI5a#fGaQ6e6WC182cMN6_rYdAcC-abdVRbIN2XCWSkv5OUU)
 * Verify the sha1sum
 ```bash
 echo c0f9edd289cea916648c51cf969f95871e4b5a99  Arch-Osint.ova | sha1sum -c
@@ -202,5 +202,4 @@ options:
 
 # 📡 To-Do
 - [ ] Add more resources and features
-- [ ] Create a iso file
-- [x] Create a ova file
+- [x] Create an ova file
