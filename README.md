@@ -10,7 +10,7 @@
 * [Tools](https://github.com/MikeHorn-git/arch-osint#%EF%B8%8F-100-tools)
 * [Resources](https://github.com/MikeHorn-git/arch-osint#-resources)
 * [Features](https://github.com/MikeHorn-git/arch-osint#-miscellaneous-features)
-* [OVA](https://github.com/MikeHorn-git/arch-osint#-version)
+* [OVA](https://github.com/MikeHorn-git/arch-osint#-ova-1)
 * [Version](https://github.com/MikeHorn-git/arch-osint#-version)
 * [Credits](https://github.com/MikeHorn-git/arch-osint#%EF%B8%8F-credits)
 * [Contribute & Support](https://github.com/MikeHorn-git/arch-osint#%EF%B8%8F-contribute--support)
@@ -197,6 +197,8 @@ The OVA VM contains exclusive features.
 * Hardened OS [72 index on lynis].
 * Light disk [11G].
 
+![Desktop](https://github.com/MikeHorn-git/Arch-Osint/assets/123373126/457254e1-7d86-4459-811c-e10d60e02cd4)
+
 # 🪧 Version 1.0
 
 # ✉️ Credits
@@ -210,5 +212,6 @@ The OVA VM contains exclusive features.
 * 💫 the project if you like it, it's the best way to support.
 
 # 📡 To-Do
-- [ ] Add more resources and features
-- [x] Create an ova file
+- [ ] Add more features and resources.
+- [ ] Add and track new tools.
+- [x] Create an ova file.
