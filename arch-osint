@@ -113,16 +113,16 @@ tools() {
 	echo -e "${YELLOW}[+] Install tools${ENDCOLOR}"
 	echo -e "${YELLOW}[*] With pacman${ENDCOLOR}"
 	pacman --noconfirm -S amass atscan binwalk cardpwn crosslinked elasticsearch email2phonenumber exiflooter exiv2 facebookosint fbi fierce finalrecon \
-		githound gitleaks gobuster gophish h8mail harpoon holehe instagramosint kamerka linkedin2username maigret maltego metagoofil mpv onionsearch \
-		osintgram phoneinfoga phonia photon protosint pwnedornot python-shodan python-social-analyzer qgis recon-ng sherlock skiptracer slackpirate \
-		sleuthkit spiderfoot sqlitebrowser stegoveritas theharvester tinfoleak2 torbrowser-launcher torcrawl translate-shell trape vt-cli wafw00f \
+		githound gitleaks gobuster goofuzz gophish harpoon holehe instagramosint kamerka linkedin2username maigret maltego metagoofil mpv nmap onionsearch \
+		osintgram phoneinfoga phonia photon protosint pwnedornot python-shodan python-social-analyzer recon-ng sherlock skiptracer slackpirate sleuthkit \
+		spiderfoot sqlitebrowser stegoveritas theharvester tinfoleak2 torbrowser-launcher torcrawl translate-shell trape vt-cli wafw00f \
 		whatbreach yt-dlp
 	clear
 	sleep 2
 
 	echo -e "${YELLOW}[*] With AUR${ENDCOLOR}"
-	sudo -u "$user" yay --noconfirm -S python-bdfr-git chatgpt-shell-cli-git drawio-desktop-bin dumpsterdiver-git gallery-dl-bin google-earth-pro \
-		instaloader pinterest-downloader-git pwndb ripme-bin waybackpy
+	sudo -u "$user" yay --noconfirm -S python-bdfr-git chatgpt-shell-cli-git dumpsterdiver-git gallery-dl-bin google-earth-pro instaloader ipinfocli \
+		pinterest-downloader-git pwndb ripme-bin waybackpy
 	clear
 	sleep 2
 
@@ -136,7 +136,10 @@ tools() {
 	git clone https://github.com/p1ngul1n0/blackbird.git
 	git clone https://github.com/Lazza/Carbon14.git
 	git clone https://github.com/initstring/cloud_enum.git
+	git clone https://github.com/Group-IB/cloud_sherlock.git
+	git clone https://github.com/mhaskar/ExchangeFinder.git
 	git clone https://github.com/Narasimha1997/fake-sms.git
+	git clone https://github.com/HunxByts/GhostTrack.git
 	git clone https://github.com/sharsil/mailcat.git
 	git clone https://github.com/AzizKpln/Moriarty-Project.git
 	git clone https://github.com/Malfrats/OSINT-Map.git
@@ -171,7 +174,7 @@ tools() {
 	sleep 2
 
 	echo -e "${YELLOW}[*] With pip3${ENDCOLOR}"
-	pip3 install --break-system-packages ghunt gitfive ignorant instagram-location-search masto nqntnqnqmb octosuite sterra telepathy tiktok-downloader \
+	pip3 install --break-system-packages ghunt gitfive h8mail ignorant instagram-location-search masto nqntnqnqmb octosuite sterra telepathy tiktok-downloader \
 		xeuledoc
 	pip3 install --break-system-packages git+https://github.com/novitae/emdofi.git
 	chown -R "$user" /opt/tools/
@@ -218,11 +221,6 @@ resources() {
 	echo -e "${GREEN}[*] Download Google dork list${ENDCOLOR}"
 	git clone https://github.com/BullsEye0/google_dork_list.git
 
-	echo -e "${GREEN}[*] Download neo4j gui${ENDCOLOR}"
-	sudo -u "$user" yay --noconfirm -S neo4j-desktop
-	echo -e "${GREEN}[*] Download offshoreleaks data for neo4j${ENDCOLOR}"
-	git clone https://github.com/ICIJ/offshoreleaks-data-packages.git
-
 	echo -e "{GREEN}[*] Download international sanctions lists${ENDCOLOR}"
 	curl -s https://github.com/bigger312/Sanctions-Lists/raw/master/sanction%20Lists%20GIT.xls -o sanction-lists.xls
 
@@ -238,10 +236,6 @@ misc() {
 	cd /home/"$user"/Desktop || $leave
 	curl -s https://user-images.githubusercontent.com/123373126/261423190-c61c479f-b84e-41bb-8d17-fa8bea799f57.png -o background.png
 	chown "$user" ./background.jpg
-
-	echo -e "${GREEN}[*] Install disk encryption softawre veracrypt${ENDCOLOR}"
-	pacman --noconfirm -S veracrypt
-	clear
 
 	echo -e "${CYAN}[*] Hardened arch linux system${ENDCOLOR}"
 	echo -e "${CYAN}[-] Install hardened kernel${ENDCOLOR}"
@@ -384,8 +378,6 @@ todo() {
 	sleep 1
 	echo -e "${MAGENTA}[*] Import user.js in firefox directory under ~/.mozilla/${ENDCOLOR}"
 	sleep 1
-	echo -e "${MAGENTA}[*] Import offshoreleaks dump in neo4j from /opt/resources/data/offshoreleaks-data-packages/data${ENDCOLOR}"
-	sleep 1
 	echo -e "${MAGENTA}[*] Import Osint jex in joplin from /opt/resources/data${ENDCOLOR}"
 	sleep 7
 	exit 1
@@ -450,7 +442,7 @@ while getopts ${optstring} arg; do
 		;;
 	v)
 		art
-		echo -e "                               ${LGREY}Version Beta${ENDCOLOR}"
+		echo -e "                               ${LGREY}Version 1.0${ENDCOLOR}"
 		;;
 	a)
 		art
