@@ -194,7 +194,6 @@ resources() {
 	mkdir /opt/resources/data
 	mkdir /opt/resources/guides
 	mkdir /opt/resources/lists
-	mkdir /opt/resources/startme
 
 	echo -e "${GREEN}[*] Download awesome lists${ENDCOLOR}"
 	cd /opt/resources/lists || $leave
