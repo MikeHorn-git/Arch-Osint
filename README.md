@@ -68,9 +68,9 @@ options:
 * Custom experience and features.
 * Disk space optimized.
 * Hardened OS.
-* Osint tools arsenal from various categories and fields.
 * Osint bookmarks resources.
 * Osint guides and lists resources.
+* Osint tools arsenal from various categories and fields.
 * OVA VM.
 * Package Manager are Pacman and Pip3 only.
 * Pip3 limited usage for dependencies and tools.
