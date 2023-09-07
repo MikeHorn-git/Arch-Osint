@@ -7,12 +7,12 @@
 * [Description](https://github.com/MikeHorn-git/arch-osint#-description)
 * [Installation](https://github.com/MikeHorn-git/arch-osint#-installation)
 * [Usage](https://github.com/MikeHorn-git/arch-osint#-usage)
-* [Pros](https://github.com/MikeHorn-git/arch-osint#-pros)
+* [Pros](https://github.com/MikeHorn-git/arch-osint#%EF%B8%8F-pros)
 * [Tools](https://github.com/MikeHorn-git/arch-osint#%EF%B8%8F-100-tools)
 * [Resources](https://github.com/MikeHorn-git/arch-osint#-resources)
 * [Features](https://github.com/MikeHorn-git/arch-osint#-miscellaneous-features)
 * [OVA](https://github.com/MikeHorn-git/arch-osint#-ova-1)
-* [Version](https://github.com/MikeHorn-git/arch-osint#-version)
+* [Version](https://github.com/MikeHorn-git/arch-osint#-version-10)
 * [Credits](https://github.com/MikeHorn-git/arch-osint#%EF%B8%8F-credits)
 * [Contribute & Support](https://github.com/MikeHorn-git/arch-osint#%EF%B8%8F-contribute--support)
 * [To-do](https://github.com/MikeHorn-git/arch-osint#-to-do)
@@ -64,7 +64,7 @@ options:
 # 🏛️ Pros
 * Aur based packages are binary one. No build from source for quicker update.
 * Based on archlinux and blackarch repository.
-* Bash installer scripts with options. For build a VM from scratch or add to an existence system.
+* Bash installer scripts with options. For build a VM from scratch or add to an existent system.
 * Custom experience and features.
 * Disk space optimized.
 * Hardened OS.
