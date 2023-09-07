@@ -7,6 +7,7 @@
 * [Description](https://github.com/MikeHorn-git/arch-osint#-description)
 * [Installation](https://github.com/MikeHorn-git/arch-osint#-installation)
 * [Usage](https://github.com/MikeHorn-git/arch-osint#-usage)
+* [Pros](https://github.com/MikeHorn-git/arch-osint#-pros)
 * [Tools](https://github.com/MikeHorn-git/arch-osint#%EF%B8%8F-100-tools)
 * [Resources](https://github.com/MikeHorn-git/arch-osint#-resources)
 * [Features](https://github.com/MikeHorn-git/arch-osint#-miscellaneous-features)
@@ -59,6 +60,22 @@ options:
 -r     Install resources.
 -m     Install miscellaneous features.
 ```
+
+# 🏛️ Pros
+* Aur based packages are binary one. No build from source for quicker update.
+* Based on archlinux and blackarch repository.
+* Bash installer scripts with options. For build a VM from scratch or add to an existence system.
+* Custom experience and features.
+* Disk space optimized.
+* Hardened OS.
+* Osint tools arsenal from various categories and fields.
+* Osint bookmarks resources.
+* Osint guides and lists resources.
+* OVA VM.
+* Package Manager are Pacman and Pip3 only.
+* Pip3 limited usage for dependencies and tools.
+* Python dependencies are from Pacman / Aur.
+* Tools related to Osint for better experience like Privacy, Forensics and many more.
 
 # 🛠️ +100 Tools
 * [Amass](https://github.com/owasp-amass/amass)                         - In-depth attack surface mapping and asset discovery.
@@ -120,7 +137,7 @@ options:
 * [Osintgram](https://github.com/Datalux/Osintgram)                     - Osintgram is a OSINT tool on Instagram.
 * [Osintmap](https://map.malfrats.industries/)                          - A map of OSINT tools.
 * [Phoneinfoga](https://github.com/sundowndev/phoneinfoga)              - Information gathering framework for phone numbers.
-* [Phonia](https:/$/github.com/coredamage/phonia)                        - Phonia Toolkit is one of the most advanced toolkits to scan phone numbers using only free resources.
+* [Phonia](https:/$/github.com/coredamage/phonia)                       - Phonia Toolkit is one of the most advanced toolkits to scan phone numbers using only free resources.
 * [Photon](https://github.com/s0md3v/Photon)                            - Incredibly fast crawler designed for OSINT. 
 * [PD](https://github.com/limkokhole/pinterest-downloader)              - Download all images/videos from Pinterest user/board/section.
 * [Proton1ntelligence](https://github.com/C3n7ral051nt4g3ncy/Prot1ntelligence) - Protintelligence is a Python script for helps you to find intelligence on Protonmail users.
@@ -129,7 +146,7 @@ options:
 * [PwnedOrNot](https://github.com/thewhiteh4t/pwnedOrNot)               - OSINT Tool for Finding Passwords of Compromised Email Addresses.
 * [Recon-ng](https://github.com/lanmaster53/recon-ng)                   - Open Source Intelligence gathering tool aimed at reducing the time spent harvesting information from open sources.
 * [Reavealin](https://github.com/mxrch/revealin)                        - Uncover the full name of a target on Linkedin.
-* [Ripme](https://github.com/RipMeApp/ripme)                          $  - Downloads albums in bulk.
+* [Ripme](https://github.com/RipMeApp/ripme)                            - Downloads albums in bulk.
 * [Sherlock](https://github.com/sherlock-project/sherlock)              - Hunt down social media accounts by username across social networks.
 * [Shodan](https://github.com/achillean/shodan-python)                  - The official Python library for Shodan.
 * [Skiptracer](https://github.com/xillwillx/skiptracer)                 - OSINT python webscaping framework.
@@ -195,7 +212,7 @@ The OVA VM contains exclusive features.
 * Blackarch blue theme.
 * Custom Grub menu.
 * Hardened OS [72 index on lynis].
-* Light disk [11G].
+* Light OS disk [11G].
 
 ![Desktop](https://github.com/MikeHorn-git/Arch-Osint/assets/123373126/457254e1-7d86-4459-811c-e10d60e02cd4)
 
@@ -206,6 +223,8 @@ The OVA VM contains exclusive features.
 * The unknown background author.
 * [Blackarch](https://www.blackarch.org/)
 * [Bookmarks](https://github.com/OhShINT/ohshint.gitbook.io/tree/main/Lists_of_OSINT_Web_Resources/Bookmarks)
+## Related Project
+* [Trace labs VM](https://github.com/tracelabs/tlosint-vm)
 
 # 🗣️ Contribute & Support
 * Feel free to contribute by giving ideas, open/fix issues, ...
@@ -213,5 +232,6 @@ The OVA VM contains exclusive features.
 
 # 📡 To-Do
 - [ ] Add more features and resources.
-- [ ] Add and track new tools.
+- [ ] Add new created tools.
 - [x] Create an ova file.
+- [ ] Create an updater script for tools from github.
