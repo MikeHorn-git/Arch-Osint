@@ -10,17 +10,18 @@
 * [Tools](https://github.com/MikeHorn-git/arch-osint#%EF%B8%8F-100-tools)
 * [Resources](https://github.com/MikeHorn-git/arch-osint#-resources)
 * [Features](https://github.com/MikeHorn-git/arch-osint#-miscellaneous-features)
+* [OVA](https://github.com/MikeHorn-git/arch-osint#-version)
 * [Version](https://github.com/MikeHorn-git/arch-osint#-version)
 * [Credits](https://github.com/MikeHorn-git/arch-osint#%EF%B8%8F-credits)
 * [Contribute & Support](https://github.com/MikeHorn-git/arch-osint#%EF%B8%8F-contribute--support)
 * [To-do](https://github.com/MikeHorn-git/arch-osint#-to-do)
 
 # ⚠️ Warning
-Run this script in a clean, dedicated and new operating system. Certain configurations and preferences can be disable or overwrite.
+Run this script in a clean, dedicated and new operating system. Certain configurations and preferences can be disabled or overwriten.
 The hardened feature in miscellaneous blocks some functionalities like Bluetooth, network file systems, webcams and more.
 
 # 🔍 Description
-Arch-Osint is available with an ova file or by running the flexible bash script in a clean archlinux VM.
+Arch-Osint is available with an OVA image or by running the flexible bash script in a clean archlinux VM.
 
 Aiming at contribute to the osint community, the project is useful for beginner to professional. The OS contain more than hundred tools for Osint [SOCMINT, GEOINT, IMINT and more], and other tools for helping in the investigations [Utilities, Forensics, Steganography, Network and more].
 
@@ -28,18 +29,18 @@ For better experience the script provides resources [Bookmarks, Startme pages, A
 
 # 👷 Installation
 ## 📦 OVA
-* Download the [VM](https://mega.nz/file/O6AwgI5a#fGaQ6e6WC182cMN6_rYdAcC-abdVRbIN2XCWSkv5OUU)
-* Verify the sha1sum
+* Download the [VM](https://mega.nz/file/jrpkkBpQ#bfW3hpCtujIsoPADFc5sTrY1f8swN8vuh8PZKXljW6Q) [5.4GB].
+* Verify the sha256sum.
 ```bash
-echo c0f9edd289cea916648c51cf969f95871e4b5a99  Arch-Osint.ova | sha1sum -c
+echo 14d5c8f789e209b297176b15a84a32c441a9dbb29a5f6213eac45a1ea54c71c9  Arch-Osint.ova | sha256sum -c
 ```
-* Credential : osint:osint
+* Credential osint:osint
 
 ## 🧑‍🍳 Installer
 ```bash
 git clone https://github.com/MikeHorn-git/arch-osint.git
 cd arch-osint
-sudo chmod +x arch-osint
+chmod +x arch-osint
 sudo ./arch-osint -h
 # Run with logs
 # sudo ./arch-osint -$OPTION | tee logs.txt
@@ -189,8 +190,14 @@ options:
 * [Waydroid](https://github.com/waydroid/waydroid) for android container-base approach.
 * Zsh with [ohmyzsh framework](https://github.com/ohmyzsh/ohmyzsh).
 
-# 🪧 Version
-* Beta
+# 📦 OVA
+The OVA VM contains exclusive features.
+* Blackarch blue theme.
+* Custom Grub menu.
+* Hardened OS [72 index on lynis].
+* Light disk [11G].
+
+# 🪧 Version 1.0
 
 # ✉️ Credits
 * All author and contributor for the projects, resources, tools and more mentioned in this project.
