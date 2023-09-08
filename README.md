@@ -62,7 +62,7 @@ options:
 ```
 
 # 🏛️ Pros
-* Aur based packages are binary one. No build from source for quicker update.
+* Aur limited usage. Build from source can be long, aim to make update quicker.
 * Based on archlinux and blackarch repository.
 * Bash installer scripts with options. For build a VM from scratch or add to an existent system.
 * Custom experience and features.
@@ -73,7 +73,7 @@ options:
 * Osint tools arsenal from various categories and fields.
 * OVA VM.
 * Package Manager are Pacman and Pip3 only.
-* Pip3 limited usage for dependencies and tools.
+* Pip3 limited usage for dependencies and tools. Pip3 is slower and can break Pacman.
 * Python dependencies are from Pacman / Aur.
 * Tools related to Osint for better experience like Privacy, Forensics and many more.
 
