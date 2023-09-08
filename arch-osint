@@ -233,7 +233,7 @@ misc() {
 	echo -e "${CYAN}[+] Install miscellaneous features${ENDCOLOR}"
 	echo -e "${GREEN}[*] Download desktop background${ENDCOLOR}"
 	cd /home/"$user"/Desktop || $leave
-	curl -s https://user-images.githubusercontent.com/123373126/261423190-c61c479f-b84e-41bb-8d17-fa8bea799f57.png -o background.png
+	curl -s -O https://raw.githubusercontent.com/MikeHorn-git/Arch-Osint/main/background.jpg
 	chown "$user" ./background.jpg
 
 	echo -e "${CYAN}[*] Hardened arch linux system${ENDCOLOR}"
